@@ -24,7 +24,7 @@
 <meta name="author" content="Jordan Iserman" />
 
 
-<meta name="date" content="2022-03-11" />
+<meta name="date" content="2022-03-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -1070,7 +1070,7 @@ where <span class="math inline">\(x_{j}\)</span> is the <em>jth</em> observation
 </div>
 <div id="analysis-of-the-current-data" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> Analysis of the Current Data</h2>
-<p>With the given set of data, the paired t-tests were appropriate. The data was approximately normally distributed, and no extreme outliers existed. However, the Wilcoxon signed-rank test was performed anyway for additional analysis. Foreshore slope, beach slope, beach width, and foredune height were all analyzed to find differences between locations. The nest lines were compared to every other variable, 25W, 25E, 50W, 50E, 100W, 100E. Tests were also performed to compare each west variable with its respective east variable. Results for the paired t-test are shown as the mean with the corresponding confidence interval. Results for the Wilcoxon signed-rank test are shown as the median with the corresponding median confidence interval.</p>
+<p>With the given set of data, the paired t-tests were appropriate. The data was approximately normally distributed, and no extreme outliers existed. However, the Wilcoxon signed-rank test was performed anyway for additional analysis. Foreshore slope, beach slope, beach width, and foredune height were all analyzed to find differences between locations. The nest lines were compared to every other variable, 25W, 25E, 50W, 50E, 100W, 100E. Tests were also performed to compare each west variable with its respective east variable. Results for the paired t-test are shown as the mean with the corresponding confidence interval. Results for the Wilcoxon signed-rank test are shown as the median with the corresponding median confidence interval. Below are some of the QQ plots used to assess normality.</p>
 <div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="methods.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">annotate_figure</span>(mfsn, <span class="at">top =</span> <span class="fu">text_grob</span>(<span class="st">&quot;Foreshore Slope Difference with Nestline&quot;</span>, <span class="at">color =</span> <span class="st">&quot;black&quot;</span>, <span class="at">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="at">size =</span> <span class="dv">20</span>))</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
 
