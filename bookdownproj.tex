@@ -1,0 +1,391 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Proseminar 2022},
+  pdfauthor={Jordan Iserman},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Proseminar 2022}
+\author{Jordan Iserman}
+\date{2022-03-11}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\hypertarget{approval-page}{%
+\section*{Approval Page}\label{approval-page}}
+\addcontentsline{toc}{section}{Approval Page}
+
+The Proseminar of Jordan Iserman is approved:
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_   \_\_\_\_\_\_\_\_\_\_
+
+Samantha Seals, Ph.D., Proseminar Advisor                   Date
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_   \_\_\_\_\_\_\_\_\_\_
+
+Josaphat Uvah, Ph.D., Proseminar Committee Chair             Date
+
+Accepted for the Department:
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_   \_\_\_\_\_\_\_\_\_\_
+
+Jia Liu, Ph.D., Department Chair                           Date
+
+\hypertarget{abstract}{%
+\section*{Abstract}\label{abstract}}
+\addcontentsline{toc}{section}{Abstract}
+
+The population of sea turtles has been decreasing over the last 30 years. This is a problem because the extinction of one species can cause ripple effects throughout the entire biosphere. The purpose of this report is to determine if there are statistically significant differences in beach characteristics between the nest line and the locations near the nest line in loggerhead and green turtles. Statistical analyses were performed with measurements taken at the nest profile line and 25, 50, and 100 meters east and west of the nest line, as well as comparisons between each east and west line. The variables measured were foreshore slope, beach slope, beach width, and foredune height. After assessing normality, paired t-tests were performed to compare the nest line to the other locations. Confidence intervals for the differences were constructed. The Wilcoxon Signed-Rank test was also used to test for differences. A p-value of 0.1 was used to test for statistical significance. There were analyses both including and excluding the one green turtle nest.
+
+\hypertarget{table-of-contents}{%
+\section*{Table of Contents}\label{table-of-contents}}
+\addcontentsline{toc}{section}{Table of Contents}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\hypertarget{statement-of-problem}{%
+\subsection{Statement of Problem}\label{statement-of-problem}}
+
+As the population of sea turtles decreases, extinction becomes more of a possibility in the future. The loss of these turtles could threaten the overall biodiversity of the world. The availability of nest sites for turtles has been declining, which is largely due to human activities. The reduction of nest sites will result in less turtles nesting, which would lead to a further reduction of the population.
+
+\hypertarget{relevance-of-problem}{%
+\subsection{Relevance of Problem}\label{relevance-of-problem}}
+
+Biodiversity is important because the loss of one species can have effects on multiple other species. One species may prey on another, while being prey for different species. If one species loses one of their major predators, their numbers can grow much higher. If a species loses a source of food, it is likely that there will be a reduction in the population of that species. So, a population change of one species will affect the populations of other species, and a chain reaction will occur. Humans may be involved as a link in this chain.
+
+\hypertarget{literature-review}{%
+\subsection{Literature Review}\label{literature-review}}
+
+There have been multiple studies that have attempted to model sea turtle nest site selection. A beach at El Cuyo, Mexico was examined to see if beach morphological characteristics influence probability of a site being used for nesting. Lots of variables affect nest-site selection, such as beach slope, orientation, width, oceanographic conditions, grain size, humidity, pH, temperature, and sand compression. They used Spearman correlation analyses between the number of nests in an area and the primary morphological characteristics. The total mean slope and the mean dune slope were able to explain 85.4\% of the variability in beach profile. The correlation between total mean slope and berm slope was the only statistically significant (p \textless{} 0.05) correlation. Green turtle nest selection was negatively correlated with the berm slope (r = -0.67). ``Ordinary linear Spearman correlation analyses were made between the number of registered nests in the range and the dominant morphological feature in each of the 2 main components from the PCA to assess the influence of beach slope and width on the sea turtle nesting activity.'' {[}1{]}
+
+The goal of this study was to model the probability of a nest being in a location using beach geomorphology characteristics. This study focuses on Kemp's Ridley turtles, ``A correlation matrix of the variables revealed collinearity between the following pairs of variables: maximum dune slope and average dune slope, maximum beach slope and average beach slope, and elevation and rugosity. There was also a notable relationship between elevation and dune height, as well as between elevation and distance from shoreline.'' ``A model containing the aforementioned significant variables without elevation or distance from shoreline only had a pseudo R-squared value of 0.097, indicative that the variables elevation and distance from shoreline are the most influential for the top two models.'' Each variable was significant in every linear model (p \textless{} 0.001), and explained 40-46\% of the variability. They state that they use ``generalized linear models''. {[}2{]}
+
+The goal of this study was to test if grain size of sand has an impact on nest site mortality, and to study nesting behaviors of sea turtles. Larger mean particle size is correlated with higher mortality. The number of trial nest holes and the mean particle diameter of sand were positively correlated using the Spearman rank test (r = 0.815; p = 0.0001; n = 20). ``Average depth to the bottom of the nest was 85 cm (SD = 18.8; range = 21 - 155; n = 78). ``When all 12 beaches were considered, a Spearman rank test demonstrated no significant correlation between mean particle diameter and survivorship (P \textgreater0.05). But, when only the 10 biogenic beaches were considered, highly significant correlations were observed between mean particle diameter and median percentages of the following: emergence success (r, = -0.8424; P = 0.0011), hatching success (r. = -0.7939; P = 0.0042), mortality during pipping (r, = 0.7454; P = 0.0109), mortality just prior to pipping (r, = 0.6727; P = 0.0309), and mortality at earlier embryonic stages (r. = 0.7091; P = 0.0192).'' {[}3{]}
+
+``Total emergences and nest densities were correlated to beach slope and width in most cases. Steeply sloped beach sections had higher nest densities (r =0.83) and higher total emergences (r =0.86). Sand compaction or resistance showed a statistical correlation of (r =0.54). They state that beach slope is correlated to multiple off-shore factors as well, so it is possible that the turtles are using the off-shore characteristics to help them select a nesting site. {[}4{]}
+
+The goal of this study was to determine the nesting variations of the green turtle. They include lots of p and F values. They tested the number of nests in different months of the year. From June to September, most of the nests were recorded in July, and the least were recorded in September. There were not statistically significant differences between years, but there were between months (F = 4.45, p \textless{} 0.05). Certain beaches showed higher nesting probabilities (F = 14.07, p \textless0.01). Certain areas contained more nests. For example, the dune zone included 1206 nests, while the sandy beach zone contained 419 nests, and the tidal zone only contained 29. ``A one-way Anova was used for comparisons among monthly and annual nesting as well as the nesting site preferences.'' {[}5{]}
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+\hypertarget{data}{%
+\subsection{Data}\label{data}}
+
+The sea turtle nest site data came from Pensacola beach in the summer of 2021. The data was recorded by Madison Williams using GPS technology. Data collection was guided and advised by Dr.~Philip Schmutz for use by the Earth and Environmental Science department at the University of West Florida.
+
+\hypertarget{variables}{%
+\subsubsection{Variables}\label{variables}}
+
+The following variables were measured:
+
+\begin{itemize}
+\tightlist
+\item
+  Foreshore slope
+\item
+  Beach slope
+\item
+  Beach width
+\item
+  Foredune height
+\end{itemize}
+
+The variables were measured at the following locations:
+
+\begin{itemize}
+\tightlist
+\item
+  Nest line
+\item
+  25 meters west
+\item
+  25 meters east
+\item
+  50 meters west
+\item
+  50 meters east
+\item
+  100 meters west
+\item
+  100 meters east
+\end{itemize}
+
+\hypertarget{statistical-methods}{%
+\subsection{Statistical Methods}\label{statistical-methods}}
+
+\hypertarget{paired-t-test}{%
+\subsubsection{Paired T-Test}\label{paired-t-test}}
+
+Paired t-tests are used to compare two dependent means, which implies that each observation coincides with another specific observation
+
+\emph{Formula}
+
+\begin{itemize}
+\tightlist
+\item
+  The formula to calculate t for a paired t-test is as follows:
+  \[t=\frac{\overline{d}}{s/\sqrt{n}}\]
+\item
+  \(\overline{d}\) is the average of the differences of the observations
+\item
+  S is the sample standard deviation
+\item
+  n is the sample size
+\end{itemize}
+
+\emph{Assumptions}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Observations are randomly selected
+\item
+  Differences between pairs are approximately normally distributed
+\item
+  No extreme outliers exist
+\end{enumerate}
+
+\emph{Interpretations}
+
+\begin{itemize}
+\tightlist
+\item
+  T can be converted to a test statistic, which is then compared to the p-value
+\item
+  The test statistic is considered significant if it is less than the p-value that is determined before testing.
+\end{itemize}
+
+\emph{Inference}
+
+\begin{itemize}
+\tightlist
+\item
+  Hypothesis testing can be performed from a paired t-test
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(H_{0}: = 0\)
+  \item
+    \(H_{1}: \ne 0\)
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{wilcoxon-signed-rank-test}{%
+\subsubsection{Wilcoxon signed-rank test}\label{wilcoxon-signed-rank-test}}
+
+The Wilcoxon signed-rank test is used for dependent data when the assumptions for a paired t-test are not met.
+
+The Wilcoxon signed-rank test is performed by first calculating differences between each pair of data. The magnitude of the differences are then ranked 1 for the smallest difference, 2 for the nest smallest difference, etc. Identical values are assigned the average values for the ranks they would be given. (If observations of ranks 4, 5, 6, and 7 are all the same, they will all be given the rank of 5.5)
+
+\emph{Formula}
+
+\begin{itemize}
+\tightlist
+\item
+  The formula to calculate W for the Wilcoxon signed-rank test is as follows
+  \[W = \sum_{i=1}^{n}Z_{i}R_{i}\]
+\item
+  n is the sample size
+\end{itemize}
+
+\emph{Assumptions}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The random variable is continuous
+\item
+  The probability density function of x is symmetric
+\end{enumerate}
+
+\emph{Interpretation}
+
+\emph{Inference}
+Hypothesis testing can be performed from the Wilcoxon signed-rank test
+- \(H_{0}: m = m_{0}\)
+- \(H_{1}: m\ne m_{0}\)
+
+\hypertarget{confidence-intervals}{%
+\subsubsection{Confidence Intervals}\label{confidence-intervals}}
+
+Confidence intervals are used to calculate a range of values that are likely to obtain the true mean with a high degree of probability.
+
+\emph{Formula}
+
+\begin{itemize}
+\tightlist
+\item
+  The formula for a confidence interval is as follows:
+\item
+  \((\overline{x} - z*s/\sqrt(n), \overline{x} + z*s/\sqrt(n)\)
+\item
+  Xbar is the sample mean
+\item
+  z is the correlation coefficient
+\item
+  n is the population sd
+\item
+  n is the sample size
+\end{itemize}
+
+\emph{Interpretation}
+
+The confidence interval is interpreted based on the p-value used. For example, a p-value of p=0.05 and a confidence interval of (0.15, 0.25) means that we are 95\% confident that the true mean of the given values are between 0.15 and 0.25
+
+\hypertarget{analysis-of-the-current-data}{%
+\subsection{Analysis of the Current Data}\label{analysis-of-the-current-data}}
+
+With the given set of data, the paired t-tests were appropriate. The data was approximately normally distributed, and no extreme outliers existed. However, the Wilcoxon signed-rank test was performed anyway for additional analysis. Foreshore slope, beach slope, beach width, and foredune height were all analyzed to find differences between locations. The nest lines were compared to every other variable, 25W, 25E, 50W, 50E, 100W, 100E. Tests were also performed to compare each west variable with its respective east variable. Results for the paired t-test are shown as the mean with the corresponding confidence interval. Results for the Wilcoxon signed-rank test are shown as the median with the corresponding median confidence interval.
+
+\hypertarget{analysis-results}{%
+\subsection{Analysis Results}\label{analysis-results}}
+
+\hypertarget{foreshore-slope}{%
+\subsubsection{Foreshore Slope}\label{foreshore-slope}}
+
+The test results for the paired t-test and the Wilcoxon signed-rank test are shown below
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.06}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.24}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.17}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.26}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.28}}@{}}
+\toprule
+& mean difference (90\% CI) & p-value paired t & median difference (90\% CI) & p-value Wilcoxon signed rank \\
+\midrule
+\endhead
+25W & 0.36 (-0.29, 1.00) & 0.347 & 0.30 (-0.34, 1.14) & 0.363 \\
+25E & 0.71 (0.16, 1.25) & 0.038 & 0.58 (0.00, 1.45) & 0.036 \\
+50W & -0.25 (-0.91, 0.41) & 0.508 & -0.31 (-0.98, 0.63) & 0.451 \\
+50E & 0.94 (0.05, 1.83) & 0.084 & 1.29 (-0.20, 2.71) & 0.079 \\
+100W & 1.16 (0.32, 2.01) & 0.030 & 0.68 (0.25, 2.93) & 0.045 \\
+100E & 0.92 (0.33, 1.50) & 0.015 & 0.73 (-0.10, 2.13) & 0.028 \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{beach-slope}{%
+\subsubsection{Beach Slope}\label{beach-slope}}
+
+\hypertarget{beach-width}{%
+\subsubsection{Beach Width}\label{beach-width}}
+
+\hypertarget{foredune-height}{%
+\subsubsection{Foredune Height}\label{foredune-height}}
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+The goal for this project was to perform statistical analysis on the sea turtle nest locations and determine if there is a statistically significant difference between these nest locations and the others. This project also provided a real-life application of R markdown to perform statistical analysis. It also required learning how to create a file in R bookdown.
+
+\hypertarget{summary-interpretation}{%
+\subsection{Summary: Interpretation}\label{summary-interpretation}}
+
+This analysis determined that statistically significant differences between the nest line and other locations exist. Foreshore slope differences exist between the nest line and 25E, 50E, 100E, and 100W, as well as between 50E and 50W. Beach Slope differences exist between the nest line and 25E, 25W, 50E, 50W, and 100W, as well as between 100W and 100E. Beach width differences exist between the nest line and 25W and 25E. No significant differences in foredune height were found between any variables. The addition or removal of the green turtle nest affected significance for four of the comparisons.
+
+\hypertarget{limitations}{%
+\subsection{Limitations}\label{limitations}}
+
+There were limitations for the project that may have affected results. The data was collected only on Pensacola beach, which may or may not apply to other locations. The data also consisted of 14 loggerhead turtle nests, and one green turtle nest, which is an uneven balance of species. 15 is also a relatively small sample size. More statistically significant differences may have been found with a larger sample size.
+
+\hypertarget{references}{%
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Cuevas E, Liceaga-Correa M, Marino-Tapia I. (2010). Influence of Beach Slope and Width on Hawksbill (Eretmochelys imbricata) and Green Turtle (Chelonia mydas) Nesting Activity in El Cuyo, Yucatan, Mexico. Chelonian Research Foundation. Retrieved from 10.2744/CCB-0819.1
+\item
+  Culver M, Gibeaut JC, Shaver DJ, Tissot P and Starek M (2020) Using Lidar Data to Assess the Relationship Between Beach Geomorphology and Kemp's Ridley (Lepidochelys kempii) Nest Site Selection Along Padre Island, TX, United States. Front. Mar.~Sci. 7:214. Retrieved from \url{https://doi.org/10.3389/fmars.2020.00214}
+\item
+  Mortimer J. (1990). The Influence of Beach Sand Characteristics on the Nesting Behavior and Clutch Survival of Green Turtles (Chelonia mydas). American Society of Ichthyologists and Herpetologists (ASIH). Retrieved from \url{https://doi.org/10.2307/1446446}
+\item
+  Provancha J \& Ehrhart L. (1987). Sea Turtle Nesting Trends at Kennedy Space Center and Cape Canaveral Air Force Station, Florida, and Relationships with Factors Influencing Nest Site Selection. ResearchGate. Retrieved from \url{https://www.researchgate.net/publication/24320682}
+\item
+  Zavaleta-Lizarraga L \& Morales-Mavil J. (2013). Nest site selection by the green turtle (Chelonia mydas) in a beach of the north of Veracruz, Mexico. ResearchGate. Retrieved from 10.7550/rmb.31913
+\end{enumerate}
+
+\hypertarget{appendix}{%
+\section*{Appendix}\label{appendix}}
+\addcontentsline{toc}{section}{Appendix}
+
+\end{document}

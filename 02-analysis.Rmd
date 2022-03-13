@@ -1,0 +1,192 @@
+## Analysis Results
+
+
+
+### Foreshore Slope
+
+```{r}
+bp1
+```
+ 
+
+
+The test results for the paired t-test and the Wilcoxon signed-rank test are shown below. Statistical significance was defined as $\alpha = 0.1$
+
+
+|      | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|------|--------------------------|------------------|----------------------------|------------------------------|
+| 25W  | 0.36 (-0.29, 1.00)       | 0.347            | 0.30 (-0.34, 1.14)         | 0.363                        |
+| 25E  | 0.71 (0.16, 1.25)        | 0.038            | 0.58 (0.00, 1.45)          | 0.036                        |
+| 50W  | -0.25 (-0.91, 0.41)      | 0.508            | -0.31 (-0.98, 0.63)        | 0.451                        |
+| 50E  | 0.94 (0.05, 1.83)        | 0.084            | 1.29 (-0.20, 2.71)         | 0.079                        |
+| 100W | 1.16 (0.32, 2.01)        | 0.030            | 0.68 (0.25, 2.93)          | 0.045                        |
+| 100E | 0.92 (0.33, 1.50)        | 0.015            | 0.73 (-0.10, 2.13)         | 0.028                        |
+
+| East vs. West | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|---------------|--------------------------|------------------|----------------------------|------------------------------|
+| 25m           | 0.35 (-0.42, 1.13)       | 0.434            | -0.13 (-0.92, 0.82)        | 0.572                        |
+| 50m           | -1.20 (-2.18, -0.21)     | 0.051            | -0.40 (-3.42, 0.20)        | 0.052                        |
+| 100m          | 0.25 (-0.58, 1.07)       | 0.606            | 0.54 (-0.31, 1.01)         | 0.451                        |
+
+These tables show both the paired t-test results and the Wilcoxon signed-rank test results for the foreshore slope. Comparisons include only the loggerhead turtle nests. When comparing the nest line to outside locations, 25E, 50E, 100E, and 100W all have statistically different means. When comparing the measurements from each side together, there is a statistically significant difference between the means of 50W and 50E. All of the statistically significant variables were significant in both the paired t-test and the Wilcoxon signed-rank test.
+
+
+
+
+|      | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|------|--------------------------|------------------|----------------------------|------------------------------|
+| 25W  | 0.58 (-0.14, 1.29)       | 0.176            | 0.34 (-0.34, 1.79)         | 0.211                        |
+| 25E  | 0.75 (0.24, 1.26)        | 0.021            | 0.66 (0, 1.45)             | 0.024                        |
+| 50W  | -0.10 (-0.77, 0.58)      | 0.806            | -0.01 (-0.98, 0.76)        | 0.755                        |
+| 50E  | 0.83 (-0.01, 1.68)       | 0.105            | 1.17 (-0.69, 2.71)         | 0.106                        |
+| 100W | 1.26 (0.46, 2.05)        | 0.015            | 0.82 (0.25, 2.93)          | 0.025                        |
+| 100E | 1.07 (0.47, 1.68)        | 0.007            | 0.84 (-0.10, 2.17)         | 0.016                        |
+
+| East vs. West | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|---------------|--------------------------|------------------|----------------------------|------------------------------|
+| 25m           | 0.17 (-0.62, 0.96)       | 0.709            | 0.23 (-0.92, 1.07)         | 0.798                        |
+| 50m           | -0.93 (-1.96, 0.10)      | 0.134            | -0.29 (-3.42, 0.28)        | 0.106                        |
+| 100m          | 0.18 (-0.59, 0.95)       | 0.68             | 0.45 (-0.68, 1.01)         | 0.551                        |
+
+These tables show both the paired t-test results and the Wilcoxon signed-rank test results for the foreshore slope. Comparisons include loggerhead nests and the green turtle nest. When comparing the nest line to outside locations, 25E, 100E, and 100W all have statistically different means. When comparing the measurements from each side together, there are no statistically significant comparisons. All of the statistically significant variables are significant in both the paired t-test and the Wilcoxon signed-rank test.
+
+
+
+
+### Beach Slope
+
+```{r}
+bp2
+```
+
+
+|      | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|------|--------------------------|------------------|----------------------------|------------------------------|
+| 25W  | 0.41 (0.16, 0.66)        | 0.012            | 0.33 (-0.04, 0.64)         | 0.024                        |
+| 25E  | 0.29 (0.05, 0.53)        | 0.051            | 0.33 (0.05, 0.37)          | 0.033                        |
+| 50W  | 0.26 (0.03, 0.49)        | 0.068            | 0.34 (-0.08, 0.59)         | 0.103                        |
+| 50E  | 0.42 (0.17, 0.68)        | 0.010            | 0.33 (0.15, 0.62)          | 0.010                        |
+| 100W | <0.01 (-0.26, 0.25)      | 0.992            | <0.01 (-0.18, 0.14)        | 0.754                        |
+| 100E | 0.41 (0.12, 0.69)        | 0.027            | 0.185 (0.08, 0.81)         | 0.012                        |
+
+| East vs. West | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|---------------|--------------------------|------------------|----------------------------|------------------------------|
+| 25m           | -0.12 (-0.48, 0.23)      | 0.554            | 0.20 (-0.22, 0.46)         | 0.286                        |
+| 50m           | -0.16 (-0.37, 0.04)      | 0.184            | -0.19 (-0.32, 0.06)        | 0.187                        |
+| 100m          | -0.41 (-0.74, -0.07)     | 0.052            | -0.40 (-0.55, -0.26)       | 0.052                        |
+
+These tables show both the paired t-test results and the Wilcoxon signed-rank test results for the beach slope. Comparisons include loggerhead nests only. When comparing the nest line to outside locations, 25E, 25W, 50E, 50W, and 100E all have statistically different means. When comparing the measurements from each side together, 100W and 100E are statistically significant. The comparison between the nest line and 50W is significant in the paired t-test, but not in the Wilcoxon signed-rank test.
+
+
+
+
+|      | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|------|--------------------------|------------------|----------------------------|------------------------------|
+| 25W  | 0.36 (0.11, 0.61)        | 0.023            | 0.26 (-0.15, 0.64)         | 0.044                        |
+| 25E  | 0.25 (0.02, 0.48)        | 0.081            | 0.31 (-0.17, 0.37)         | 0.057                        |
+| 50W  | 0.27 (0.05, 0.48)        | 0.046            | 0.34 (-0.08, 0.59)         | 0.065                        |
+| 50E  | 0.36 (0.09, 0.62)        | 0.032            | 0.26 (0.10, 0.62)          | 0.033                        |
+| 100W | -0.07 (-0.34, 0.20)      | 0.65             | -0.06 (-0.34, 0.14)        | 0.514                        |
+| 100E | 0.24 (-0.16, 0.63)       | 0.308            | 0.16 (0.03, 0.81)          | 0.065                        |
+
+| East vs. West | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|---------------|--------------------------|------------------|----------------------------|------------------------------|
+| 25m           | -0.11 (-0.44, 0.22)      | 0.562            | 0.14 (-0.22, 0.46)         | 0.293                        |
+| 50m           | -0.09 (-0.32, 0.14)      | 0.517            | -0.18 (-0.32, 0.19)        | 0.443                        |
+| 100m          | -0.31 (-0.66, 0.05)      | 0.150            | -0.38 (-0.55, 0.01)        | 0.148                        |
+
+These tables show both the paired t-test results and the Wilcoxon signed-rank test results for the beach slope. Comparisons include loggerhead nests and the green turtle nest. When comparing the nest line to outside locations, 25E, 25W, 50E, 50W, and 100E all have statistically different means. When comparing the measurements from each side together, there are no statistically significant comparisons. The comparison between the nest line and 100W is not significant in the paired t-test, but it was in the Wilcoxon signed-rank test.
+
+
+
+
+### Beach Width
+
+```{r}
+bp3
+```
+
+
+|      | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|------|--------------------------|------------------|----------------------------|------------------------------|
+| 25W  | 1.00 (-0.68, 2.68)       | 0.312            | 1.60 (-0.60, 2.46)         | 0.090                        |
+| 25E  | 2.04 (0.40, 3.67)        | 0.046            | 1.45 (-1.58, 5.52)         | 0.103                        |
+| 50W  | -0.30 (-2.07, 1.48)      | 0.772            | 1.48 (-4.47, 2.36)         | 0.802                        |
+| 50E  | 1.10 (-0.79, 2.98)       | 0.322            | 0.58 (-1.83, 4.41)         | 0.380                        |
+| 100W | -0.1 (-2.78, 2.58)       | 0.948            | 0.20 (-4.57, 4.98)         | 0.950                        |
+| 100E | -1.30 (-4.32, 1.73)      | 0.462            | -1.86 (-6.08, 3.19)        | 0.451                        |
+
+| East vs. West | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|---------------|--------------------------|------------------|----------------------------|------------------------------|
+| 25m           | 1.04 (-1.57, 3.65)       | 0.493            | -1.54 (-5.95, 3.75)        | 0.490                        |
+| 50m           | -1.39 (-3.97, 1.18)      | 0.356            | -0.99 (-5.00, 2.44)        | 0.451                        |
+| 100m          | 1.20 (-2.65, 5.04)       | 0.591            | 3.41 (-6.40, 6.85)         | 0.572                        |
+
+These tables show both the paired t-test results and the Wilcoxon signed-rank test results for the beach width. Comparisons include loggerhead nests only. When comparing the nest line to outside locations, 25E and 25W both have statistically different means. When comparing the measurements from each side together, there are no statistically significant comparisons. The comparison between the nest line and 25W is not significant in the paired t-test, but it is in the Wilcoxon signed-rank test. The comparison between the nest line and 25E is significant in the paired t-test, but not in the Wilcoxon signed-rank test.
+
+
+
+
+|      | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|------|--------------------------|------------------|----------------------------|------------------------------|
+| 25W  | 0.68 (-0.98, 2.33)       | 0.482            | 1.53 (-0.71, 2.46)         | 0.244                        |
+| 25E  | 1.72 (0.10, 3.33)        | 0.082            | 1.36 (-1.61, 5.52)         | 0.164                        |
+| 50W  | -0.07 (-1.76, 1.61)      | 0.94             | 1.62 (-4.47, 2.89)         | 0.977                        |
+| 50E  | 0.79 (-1.03, 2.62)       | 0.457            | 0.53 (-3.40, 4.41)         | 0.551                        |
+| 100W | 0.07 (-2.44, 2.57)       | 0.964            | 1.22 (-4.57, 4.98)         | 0.842                        |
+| 100E | -0.75 (-3.71, 2.20)      | 0.661            | -1.85 (-6.08, 3.94)        | 0.670                        |
+
+| East vs. West | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|---------------|--------------------------|------------------|----------------------------|------------------------------|
+| 25m           | 1.04 (-1.38, 3.46)       | 0.462            | -1.03 (-5.95, 3.75)        | 0.410                        |
+| 50m           | -0.87 (-3.42, 1.69)      | 0.560            | 0.07 (-5.00, 3.16)         | 0.755                        |
+| 100m          | 0.82 (-2.80, 4.44)       | 0.696            | 2.49 (-6.40, 6.85)         | 0.670                        |
+
+These tables show both the paired t-test results and the Wilcoxon signed-rank test results for the beach width. Comparisons include loggerhead nests and the green turtle nest. When comparing the nest line to outside locations 25E has a statistically different mean. When comparing the measurements from each side together, there are no statistically significant comparisons. The comparison between the nest line and 25E is significant in the paired t-test, but not in the Wilcoxon signed-rank test. 
+
+
+
+
+### Foredune Height
+
+```{r}
+bp4
+```
+
+
+|      | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|------|--------------------------|------------------|----------------------------|------------------------------|
+| 25W  | -0.02 (-0.16, 0.12)      | 0.783            | -0.10 (-0.12, 0.15)        | 1.000                        |
+| 25E  | 0.03 (-0.09, 0.15)       | 0.655            | 0.05 (-0.21, 0.25)         | 0.660                        |
+| 50W  | 0.03 (-0.08, 0.14)       | 0.610            | 0.10 (-0.06, 0.20)         | 0.315                        |
+| 50E  | 0.08 (-0.12, 0.28)       | 0.504            | -0.13 (-0.21, 0.39)        | 0.754                        |
+| 100W | -0.01 (-0.17, 0.15)      | 0.897            | 0.09 (-0.30, 0.24)         | 0.950                        |
+| 100E | 0.03 (-0.17, 0.22)       | 0.804            | -0.05 (-0.24, 0.36)        | 0.900                        |
+
+| East vs. West | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|---------------|--------------------------|------------------|----------------------------|------------------------------|
+| 25m           | 0.05 (-0.14, 0.24)       | 0.627            | -0.04 (-0.34, 0.09)        | 0.530                        |
+| 50m           | -0.05 (-0.29, 0.20)      | 0.740            | 0.07 (-0.36, 0.34)         | 0.900                        |
+| 100m          | -0.04 (-0.33, 0.25)      | 0.813            | 0.04 (-0.54, 0.45)         | 0.900                        |
+
+These tables show both the paired t-test results and the Wilcoxon signed-rank test results for foredune height. Comparisons include loggerhead nests only. When comparing the nest line to outside locations there are no statistical differences for any variables. When comparing the measurements from each side together, there are no statistically significant comparisons.
+
+
+
+
+|      | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|------|--------------------------|------------------|----------------------------|------------------------------|
+| 25W  | >0.01 (-0.14, 0.13)      | 0.922            | -0.095 (-0.117, 0.200)     | 0.842                        |
+| 25E  | 0.04 (-0.07, 0.15)       | 0.567            | 0.073 (-0.210, 0.247)      | 0.590                        |
+| 50W  | 0.03 (-0.07, 0.13)       | 0.608            | 0.084 (-0.062, 0.199)      | 0.268                        |
+| 50E  | 0.06 (-0.13, 0.25)       | 0.604            | -0.145 (-0.238, 0.392)     | 0.887                        |
+| 100W | -0.03 (-0.18, 0.12)      | 0.737            | 0.013 (-0.303, 0.242)      | 0.755                        |
+| 100E | 0.02 (-0.16, 0.20)       | 0.849            | -0.049 (-0.235, 0.363)     | 0.977                        |
+
+| East vs. West | mean difference (90% CI) | p-value paired t | median difference (90% CI) | p-value Wilcoxon signed rank |
+|---------------|--------------------------|------------------|----------------------------|------------------------------|
+| 25m           | 0.04 (-0.13, 0.22)       | 0.663            | -0.004 (-0.342, 0.087)     | 0.629                        |
+| 50m           | -0.03 (-0.25, 0.20)      | 0.835            | 0.154 (-0.357, 0.344)      | 1.000                        |
+| 100m          | -0.05 (-0.32, 0.22)      | 0.753            | -0.014 (-0.536, 0.451)     | 0.842                        |
+
+These tables show both the paired t-test results and the Wilcoxon signed-rank test results for foredune height. Comparisons include loggerhead nests and the green turtle nest. When comparing the nest line to outside locations there are no statistical differences for any variables. When comparing the measurements from each side together, there are no statistically significant comparisons.

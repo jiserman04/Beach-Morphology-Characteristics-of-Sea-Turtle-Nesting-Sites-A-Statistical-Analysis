@@ -1,0 +1,25 @@
+# Conclusion
+
+The goal for this project was to perform statistical analysis on the sea turtle nest locations and determine if there is a statistically significant difference between these nest locations and the others. This project also provided a real-life application of R markdown to perform statistical analysis. It also required learning how to create a file in R bookdown. 
+
+## Summary: Interpretation
+
+This analysis determined that statistically significant differences between the nest line and other locations exist. Foreshore slope differences exist between the nest line and 25E, 50E, 100E, and 100W, as well as between 50E and 50W. Beach Slope differences exist between the nest line and 25E, 25W, 50E, 50W, and 100W, as well as between 100W and 100E. Beach width differences exist between the nest line and 25W and 25E. No significant differences in foredune height were found between any variables. The addition or removal of the green turtle nest affected significance for four of the comparisons. 
+
+## Limitations
+
+There were limitations for the project that may have affected results. The data was collected only on Pensacola beach, which may or may not apply to other locations. The data also consisted of 14 loggerhead turtle nests, and one green turtle nest, which is an uneven balance of species. 15 is also a relatively small sample size. More statistically significant differences may have been found with a larger sample size.
+
+# References {-}
+
+1. Cuevas E, Liceaga-Correa M, Marino-Tapia I. (2010). Influence of Beach Slope and Width on Hawksbill (Eretmochelys imbricata) and Green Turtle (Chelonia mydas) Nesting Activity in El Cuyo, Yucatan, Mexico. Chelonian Research Foundation. Retrieved from 10.2744/CCB-0819.1
+
+2. Culver M, Gibeaut JC, Shaver DJ, Tissot P and Starek M (2020) Using Lidar Data to Assess the Relationship Between Beach Geomorphology and Kemp’s Ridley (Lepidochelys kempii) Nest Site Selection Along Padre Island, TX, United States. Front. Mar. Sci. 7:214. Retrieved from https://doi.org/10.3389/fmars.2020.00214
+
+3. Mortimer J. (1990). The Influence of Beach Sand Characteristics on the Nesting Behavior and Clutch Survival of Green Turtles (Chelonia mydas). American Society of Ichthyologists and Herpetologists (ASIH). Retrieved from https://doi.org/10.2307/1446446
+
+4. Provancha J & Ehrhart L. (1987). Sea Turtle Nesting Trends at Kennedy Space Center and Cape Canaveral Air Force Station, Florida, and Relationships with Factors Influencing Nest Site Selection. ResearchGate. Retrieved from https://www.researchgate.net/publication/24320682
+
+5. Zavaleta-Lizarraga L & Morales-Mavil J. (2013). Nest site selection by the green turtle (Chelonia mydas) in a beach of the north of Veracruz, Mexico. ResearchGate. Retrieved from 10.7550/rmb.31913
+
+# Appendix {-}
