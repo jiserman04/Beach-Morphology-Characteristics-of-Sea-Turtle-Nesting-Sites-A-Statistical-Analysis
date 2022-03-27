@@ -1,10 +1,33 @@
 --- 
-title: "Proseminar 2022"
+title: "Sea Turtle Analysis"
 author: "Jordan Iserman"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-
 ---
+
+# {-}
+
+<center>
+
+By: Jordan Iserman
+
+Advisor: Dr. Samantha Seals
+
+
+<br>
+
+
+An Undergraduate Proseminar
+
+In Partial Fulfillment of the Degree of
+
+Bachelor of Science in Mathematics 
+
+The University of West Florida
+
+May 2022
+
+</center>
 
 # Approval Page {-}
 
@@ -41,6 +64,57 @@ Jia Liu, Ph.D., Department Chair                        
 The population of sea turtles has been decreasing over the last 30 years. This is a problem because the extinction of one species can cause ripple effects throughout the entire biosphere. The purpose of this report is to determine if there are statistically significant differences in beach characteristics between the nest line and the locations near the nest line in loggerhead and green turtles. Statistical analyses were performed with measurements taken at the nest profile line and 25, 50, and 100 meters east and west of the nest line, as well as comparisons between each east and west line. The variables measured were foreshore slope, beach slope, beach width, and foredune height. After assessing normality, paired t-tests were performed to compare the nest line to the other locations. Confidence intervals for the differences were constructed. The Wilcoxon Signed-Rank test was also used to test for differences. A p-value of 0.1 was used to test for statistical significance. There were analyses both including and excluding the one green turtle nest.
 
 # Table of Contents {-}
+
+
+Approval Page . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . i
+<br>
+Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ii
+<br>
+Table of Contents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . iii
+<br>
+Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+<br>
+ Statement of Problem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .1.1
+<br>
+ Relevance of Problem. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.2
+<br>
+ Literature Review . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1.3
+<br>
+Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+<br>
+ Data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.1
+<br>
+ Variables. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.1.1
+<br>
+ Statistical Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.2
+<br>
+  Paired t-test. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.2.1
+<br>
+  Wilcoxon Signed-rank test. . . . . . . . . . . . . . . . . . . . . . . . . . . 2.2.2
+<br>
+  Confidence Intervals . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.2.3
+<br>
+ Analysis of the Current Data . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.3
+<br>
+ Analysis Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.4
+<br>
+  Foreshore Slope. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.4.1
+<br>
+  Beach Slope. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.4.2
+<br>
+  Beach Width. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.4.3
+<br>
+  Foredune Height . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2.4.4
+<br>
+Conclusions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+<br>
+ Summary:Interpretation. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.1
+<br>
+ Limitations. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3.2
+<br>
+References. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . iv
+<br>
+Appendix. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . v
 
 # Introduction
 
