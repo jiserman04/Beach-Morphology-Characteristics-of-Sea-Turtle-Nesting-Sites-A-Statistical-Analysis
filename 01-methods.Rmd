@@ -111,7 +111,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (°)") + 
-  ggtitle("25w") +
+  ggtitle("25W") +
   ylim(min=-2.5, max=4) +
   theme_minimal()
 
@@ -120,7 +120,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (°)") + 
-  ggtitle("25e") +
+  ggtitle("25E") +
   ylim(min=-2.5, max=4) +
   theme_minimal()
   
@@ -129,7 +129,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (°)") + 
-  ggtitle("50w") +
+  ggtitle("50W") +
   ylim(min=-2.5, max=4) +
   theme_minimal()
 
@@ -138,7 +138,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (°)") + 
-  ggtitle("50e") +
+  ggtitle("50E") +
   ylim(min=-2.5, max=4) +
   theme_minimal()
 
@@ -147,7 +147,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (°)") + 
-  ggtitle("100w") +
+  ggtitle("100W") +
   ylim(min=-2.5, max=4) +
   theme_minimal()
   
@@ -156,7 +156,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (°)") + 
-  ggtitle("100e") +
+  ggtitle("100E") +
   ylim(min=-2.5, max=4) +
   theme_minimal()
 ```
@@ -169,7 +169,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (°)") + 
-  ggtitle("25w") +
+  ggtitle("25W") +
   ylim(min=-2.25, max=2) +
   theme_minimal()
 
@@ -178,7 +178,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (°)") + 
-  ggtitle("25e") +
+  ggtitle("25E") +
   ylim(min=-2.25, max=2) +
   theme_minimal()
 
@@ -187,7 +187,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (°)") + 
-  ggtitle("50w") +
+  ggtitle("50W") +
   ylim(min=-2.25, max=2) +
   theme_minimal()
   
@@ -196,7 +196,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (°)") + 
-  ggtitle("50e") +
+  ggtitle("50E") +
   ylim(min=-2.25, max=2) +
   theme_minimal()
  
@@ -205,7 +205,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (°)") + 
-  ggtitle("100w") +
+  ggtitle("100W") +
   ylim(min=-2.25, max=2) +
   theme_minimal()
  
@@ -214,7 +214,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (°)") + 
-  ggtitle("100e") +
+  ggtitle("100E") +
   ylim(min=-2.25, max=2) +
   theme_minimal()
 ```
@@ -227,7 +227,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (m)") + 
-  ggtitle("25w") +
+  ggtitle("25W") +
   ylim(min=-13, max=13) +
   theme_minimal()
 
@@ -236,7 +236,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (m)") + 
-  ggtitle("25e") +
+  ggtitle("25E") +
   ylim(min=-13, max=13) +
   theme_minimal()
   
@@ -245,7 +245,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (m)") + 
-  ggtitle("50w") +
+  ggtitle("50W") +
   ylim(min=-13, max=13) +
   theme_minimal()
 
@@ -254,7 +254,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (m)") + 
-  ggtitle("50e") +
+  ggtitle("50E") +
   ylim(min=-13, max=13) +
   theme_minimal()
   
@@ -263,7 +263,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (m)") + 
-  ggtitle("100w") +
+  ggtitle("100W") +
   ylim(min=-13, max=13) +
   theme_minimal()
 
@@ -272,7 +272,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (m)") + 
-  ggtitle("100e") +
+  ggtitle("100E") +
   ylim(min=-13, max=13) +
   theme_minimal()
 ```
@@ -284,7 +284,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (m)") + 
-  ggtitle("25w") +
+  ggtitle("25W") +
   ylim(min=-0.75, max=1.25) +
   theme_minimal()
 
@@ -293,7 +293,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (m)") + 
-  ggtitle("25e") +
+  ggtitle("25E") +
   ylim(min=-0.75, max=1.25) +
   theme_minimal()
  
@@ -302,7 +302,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (m)") + 
-  ggtitle("50w") +
+  ggtitle("50W") +
   ylim(min=-0.75, max=1.25) +
   theme_minimal()
 
@@ -311,7 +311,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (m)") + 
-  ggtitle("50e") +
+  ggtitle("50E") +
   ylim(min=-0.75, max=1.25) +
   theme_minimal()
  
@@ -320,7 +320,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (m)") + 
-  ggtitle("100w") +
+  ggtitle("100W") +
   ylim(min=-0.75, max=1.25) +
   theme_minimal()
   
@@ -329,7 +329,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
   xlab("Nest") + 
   ylab("Difference (m)") + 
-  ggtitle("100e") +
+  ggtitle("100E") +
   ylim(min=-0.75, max=1.25) +
   theme_minimal()
 ```
@@ -465,7 +465,7 @@ qqfsn25w <- ggplot(data_nestline, aes(sample = fsn25w)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("25w") +
+  ggtitle("25W") +
   theme(text = element_text(size=16))
 
 qqfsn25e <- ggplot(data_nestline, aes(sample = fsn25e)) +
@@ -474,7 +474,7 @@ qqfsn25e <- ggplot(data_nestline, aes(sample = fsn25e)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("25e") +
+  ggtitle("25E") +
   theme(text = element_text(size=16))
 
 qqfsn50w <- ggplot(data_nestline, aes(sample = fsn50w)) +
@@ -483,7 +483,7 @@ qqfsn50w <- ggplot(data_nestline, aes(sample = fsn50w)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("50w") +
+  ggtitle("50W") +
   theme(text = element_text(size=16))
 
 qqfsn50e <- ggplot(data_nestline, aes(sample = fsn50e)) +
@@ -492,7 +492,7 @@ qqfsn50e <- ggplot(data_nestline, aes(sample = fsn50e)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("50e") +
+  ggtitle("50E") +
   theme(text = element_text(size=16))
 
 qqfsn100w <- ggplot(data_nestline, aes(sample = fsn100w)) +
@@ -501,7 +501,7 @@ qqfsn100w <- ggplot(data_nestline, aes(sample = fsn100w)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("100w") +
+  ggtitle("100W") +
   theme(text = element_text(size=16))
 
 qqfsn100e <- ggplot(data_nestline, aes(sample = fsn100e)) +
@@ -510,7 +510,7 @@ qqfsn100e <- ggplot(data_nestline, aes(sample = fsn100e)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("100e") +
+  ggtitle("100E") +
   theme(text = element_text(size=16))
 
 qqbsn25w <- ggplot(data_nestline, aes(sample = bsn25w)) +
@@ -519,7 +519,7 @@ qqbsn25w <- ggplot(data_nestline, aes(sample = bsn25w)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("25w") +
+  ggtitle("25W") +
   theme(text = element_text(size=16))
 
 qqbsn25e <- ggplot(data_nestline, aes(sample = bsn25e)) +
@@ -528,7 +528,7 @@ qqbsn25e <- ggplot(data_nestline, aes(sample = bsn25e)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("25e") +
+  ggtitle("25E") +
   theme(text = element_text(size=16))
 
 qqbsn50w <- ggplot(data_nestline, aes(sample = bsn50w)) +
@@ -537,7 +537,7 @@ qqbsn50w <- ggplot(data_nestline, aes(sample = bsn50w)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("50w") +
+  ggtitle("50W") +
   theme(text = element_text(size=16))
 
 qqbsn50e <- ggplot(data_nestline, aes(sample = bsn50e)) +
@@ -546,7 +546,7 @@ qqbsn50e <- ggplot(data_nestline, aes(sample = bsn50e)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("50e") +
+  ggtitle("50E") +
   theme(text = element_text(size=16))
 
 qqbsn100w <- ggplot(data_nestline, aes(sample = bsn100w)) +
@@ -555,7 +555,7 @@ qqbsn100w <- ggplot(data_nestline, aes(sample = bsn100w)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("100w") +
+  ggtitle("100W") +
   theme(text = element_text(size=16))
 
 qqbsn100e <- ggplot(data_nestline, aes(sample = bsn100e)) +
@@ -564,7 +564,7 @@ qqbsn100e <- ggplot(data_nestline, aes(sample = bsn100e)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("100e") +
+  ggtitle("100E") +
   theme(text = element_text(size=16))
 
 qqbwn25w <- ggplot(data_nestline, aes(sample = bwn25w)) +
@@ -573,7 +573,7 @@ qqbwn25w <- ggplot(data_nestline, aes(sample = bwn25w)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("25w") +
+  ggtitle("25W") +
   theme(text = element_text(size=16))
 
 qqbwn25e <- ggplot(data_nestline, aes(sample = bwn25e)) +
@@ -582,7 +582,7 @@ qqbwn25e <- ggplot(data_nestline, aes(sample = bwn25e)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("25e") +
+  ggtitle("25E") +
   theme(text = element_text(size=16))
 
 qqbwn50w <- ggplot(data_nestline, aes(sample = bwn50w)) +
@@ -591,7 +591,7 @@ qqbwn50w <- ggplot(data_nestline, aes(sample = bwn50w)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("50w") +
+  ggtitle("50W") +
   theme(text = element_text(size=16))
 
 qqbwn50e <- ggplot(data_nestline, aes(sample = bwn50e)) +
@@ -600,7 +600,7 @@ qqbwn50e <- ggplot(data_nestline, aes(sample = bwn50e)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("50e") +
+  ggtitle("50E") +
   theme(text = element_text(size=16))
 
 qqbwn100w <- ggplot(data_nestline, aes(sample = bwn100w)) +
@@ -609,7 +609,7 @@ qqbwn100w <- ggplot(data_nestline, aes(sample = bwn100w)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("100w") +
+  ggtitle("100W") +
   theme(text = element_text(size=16))
 
 qqbwn100e <- ggplot(data_nestline, aes(sample = bwn100e)) +
@@ -618,7 +618,7 @@ qqbwn100e <- ggplot(data_nestline, aes(sample = bwn100e)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("100e") +
+  ggtitle("100E") +
   theme(text = element_text(size=16))
 
 qqfhn25w <- ggplot(data_nestline, aes(sample = fhn25w)) +
@@ -627,7 +627,7 @@ qqfhn25w <- ggplot(data_nestline, aes(sample = fhn25w)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("25w") +
+  ggtitle("25W") +
   theme(text = element_text(size=16))
 
 qqfhn25e <- ggplot(data_nestline, aes(sample = fhn25e)) +
@@ -636,7 +636,7 @@ qqfhn25e <- ggplot(data_nestline, aes(sample = fhn25e)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("25e") +
+  ggtitle("25E") +
   theme(text = element_text(size=16))
 
 qqfhn50w <- ggplot(data_nestline, aes(sample = fhn50w)) +
@@ -645,7 +645,7 @@ qqfhn50w <- ggplot(data_nestline, aes(sample = fhn50w)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("50w") +
+  ggtitle("50W") +
   theme(text = element_text(size=16))
 
 qqfhn50e <- ggplot(data_nestline, aes(sample = fhn50e)) +
@@ -654,7 +654,7 @@ qqfhn50e <- ggplot(data_nestline, aes(sample = fhn50e)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("50e") +
+  ggtitle("50E") +
   theme(text = element_text(size=16))
 
 qqfhn100w <- ggplot(data_nestline, aes(sample = fhn100w)) +
@@ -663,7 +663,7 @@ qqfhn100w <- ggplot(data_nestline, aes(sample = fhn100w)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("100w") +
+  ggtitle("100W") +
   theme(text = element_text(size=16))
 
 qqfhn100e <- ggplot(data_nestline, aes(sample = fhn100e)) +
@@ -672,7 +672,7 @@ qqfhn100e <- ggplot(data_nestline, aes(sample = fhn100e)) +
   theme_minimal() +
   xlab("Theoretical") +
   ylab("Sample") +
-  ggtitle("100e") +
+  ggtitle("100E") +
   theme(text = element_text(size=16))
 ```
 
@@ -809,10 +809,10 @@ The sea turtle nest site data came from Pensacola beach in the summer of 2021. T
 
 The following variables were measured:
 
-- Foreshore slope
--	Beach slope
--	Beach width
--	Foredune height
+- Foreshore slope: Slope of the profile from the mean low water line to the mean high water line
+-	Beach slope: Slope of the profile from the mean high water line to the potential line of vegetation
+-	Beach width: Distance between the potential vegetation line and the mean high water line
+-	Foredune height: Highest elevation point between the landward dune boundary and the potential line of vegetation
 
 The variables were measured at the following locations:
 
@@ -824,12 +824,26 @@ The variables were measured at the following locations:
 -	100 meters west
 -	100 meters east
 
+Figure 1 provides and image of the observed locations.
+
+<center>
+
+![](measurement locations.png)
+
+Figure 1. Observed locations.
+
+</center>
 
 ## Statistical Methods
 
 ### Paired T-Test
 
-Paired t-tests are used to compare two dependent means, which implies that each observation coincides with another specific observation
+Paired t-tests are used to compare two dependent means, which implies that observations are paired.
+
+*Hypotheses*
+
+   - $H_{0}: \mu_{1} = \mu_{2}$
+   - $H_{1}: \mu_{1} \ne \mu_{2}$
 
 *Formula*
 
@@ -848,50 +862,32 @@ The formula to calculate $t_{0}$ for a paired t-test is as follows:
 3. No extreme outliers exist
 
 
-*Interpretations*
-
-$t_{0}$ can be converted to a p-value by using a table of t-distribution critical values, or a t-score to p-value calculator. The p-value is then compared to the significance level ($\alpha$). If the p-value is less than the significance level, the null hypothesis can be rejected with a confidence level of $(1-\alpha)*100$%
-
-
-*Inference*
-
-Hypothesis testing can be performed from a paired t-test
-
-   - $H_{0}: \mu_{1} = \mu_{2}$
-   - $H_{1}: \mu_{1} \ne \mu_{2}$
     
 ### Wilcoxon signed-rank test
 
-The Wilcoxon signed-rank test is used for dependent data when the assumptions for a paired t-test are not met.
+The Wilcoxon signed-rank test is used for dependent data that is not normally distributed.
 
-The Wilcoxon signed-rank test is performed by first calculating differences between each pair of data. The magnitude of the differences are then ranked 1 for the smallest difference, 2 for the next smallest difference, etc. Identical values or ties are assigned the average values for the ranks they would be given. (If observations of ranks 4, 5, 6, and 7 are all the same, they will all be given the rank of 5.5)
+The Wilcoxon signed-rank test is performed by first calculating differences between each pair of data. The data is then ranked by absolute value.
 
-*Formula*
+*Hypotheses*
 
-The formula to calculate $W$ for the Wilcoxon signed-rank test is as follows:
-\[W = \sum_{i=1}^{n}Z_{i}R_{i}\]
+   - $H_{0}: M_{D} = 0$
+   - $H_{1}: M_{D} \ne 0$
 
-- $n$ is the sample size (number of pairs)
-- $Z_{i}$ is an indicator variable; $Z_{i} = 0$ if $x_{i} - m_{0}$ is negative and $Z_{i} = 1$ if $x_{i} - m_{0}$ is positive
-   - $m_{0}$ is the sample median
-   - $x_{i}$ is the *ith* observation
-- $R_{i}$ is the rank of the *ith* observation
+*Test Statistic*
+
+The formula to calculate $T_{0}$ for the Wilcoxon signed-rank test is as follows:
+\[min(T_{+},|T_{-}|)\]
+
+&emsp;$T_{+}$ is the sum of the positive ranks
+&emsp;$T_{-}$ is the sum of the negative ranks
 
 *Assumptions*
 
 1. The random variable is continuous
 2. The probability density function of x is symmetric
 
-*Interpretation*
 
-$W$ can be converted to a p-value by using a table of  critical values, or a specialized calculator. The p-value is then compared to the significance level ($\alpha$). If the p-value is less than the significance level, the null hypothesis can be rejected with a confidence level of $(1-\alpha)*100$%
-
-*Inference*
-
-Hypothesis testing can be performed from the Wilcoxon signed-rank test
-
-- $H_{0}: m = m_{0}$
-- $H_{1}: m\ne m_{0}$
 
 ### Confidence Intervals
 
@@ -899,22 +895,23 @@ Confidence intervals are used to calculate a range of values that are likely to 
 
 *Formula*
 
-The formula for a confidence interval for a paired t-test is as follows:
+The formula for a confidence interval for $\mu$ for dependent data is as follows:
 
--	$(\overline{d} - t_{\alpha/2}*s_{d}/\sqrt{n}, \overline{d} + t_{\alpha/2}*s_{d}/\sqrt{n})$
+\[(\overline{d} - t_{\alpha/2}*\frac{s_{d}}{\sqrt{n}}, \overline{d} + t_{\alpha/2}*\frac{s_{d}}{\sqrt{n}})\]
 -	$\overline{d}$ is the mean of the differences
--	$t_{\alpha/2}$ is the test statistic
-   - $\alpha$ is the significance level
+-	$t_{\alpha/2}$ is the critical value
+   - 1 - $\alpha$/2 is the cinfidence level
 -	$s_{d}$ is the standard deviation of the differences
--	$n$ is the sample size
+-	$n$ is the sample size (number of pairs)
 
 The formula for a confidence interval for the median is as follows:
+
 \[(x_{j},x_{k})\]
 where $x_{j}$ is the *jth* observation, and $x_{k}$ is the *kth* observation
 
 -	$j = n*q - z_{\alpha}\sqrt{n*q*(1-q)}$
 -	$k = n*q + z_{\alpha}\sqrt{n*q*(1-q)}$
-   - $n$ is the sample size
+   - $n$ is the sample size (number of pairs)
    - $q$ is the quantile of interest, 0.5 is used for the median
    - $z_{\alpha}$ is the critical value
       - $\alpha$ is the significance level
@@ -927,7 +924,7 @@ The confidence interval is interpreted based on the significance level used. We 
 
 ## Analysis of the Current Data
 
-With the given set of data, the paired t-tests were appropriate. The data was approximately normally distributed, and no extreme outliers existed. However, the Wilcoxon signed-rank test was performed anyway for additional analysis. Foreshore slope, beach slope, beach width, and foredune height were all analyzed to find differences between locations. The nest lines were compared to every other variable, 25W, 25E, 50W, 50E, 100W, 100E. Tests were also performed to compare each west variable with its respective east variable. Results for the paired t-test are shown as the mean with the corresponding confidence interval. Results for the Wilcoxon signed-rank test are shown as the median with the corresponding median confidence interval. Below are some of the QQ plots used to assess normality.
+With the given set of data, the paired t-tests were appropriate. The data was approximately normally distributed, and no extreme outliers existed. Below are some of the QQ plots used to assess normality. The rest of the QQ plots are included in the appendix. The Wilcoxon signed-rank test was also performed for comparison purposes. Foreshore slope, beach slope, beach width, and foredune height were all analyzed to find differences between locations. The nest lines were compared to every other location, 25W, 25E, 50W, 50E, 100W, 100E. Tests were also performed to compare each west variable with its respective east variable. Results for the paired t-test are shown as the mean with the corresponding confidence interval. Results for the Wilcoxon signed-rank test are shown as the median with the corresponding median confidence interval. 
 
 ```{r}
 annotate_figure(mfsn, top = text_grob("Foreshore Slope Difference with Nestline", color = "black", face = "bold", size = 20))

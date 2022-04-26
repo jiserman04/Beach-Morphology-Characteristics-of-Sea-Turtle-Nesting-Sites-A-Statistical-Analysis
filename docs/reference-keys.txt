@@ -18,6 +18,3 @@ foredune-height
 conclusion
 summary-interpretation
 limitations
-making-calculations-easy
-differences-between-nestline-and-other-locations
-differences-between-25e-and-25w-50e-and-50w-and-100e-and-100w
