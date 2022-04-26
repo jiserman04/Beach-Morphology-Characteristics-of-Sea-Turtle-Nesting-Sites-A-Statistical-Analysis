@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2022-04-25" />
+<meta name="date" content="2022-04-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -173,7 +173,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2" data-path="conclusion.html"><a href="conclusion.html#limitations"><i class="fa fa-check"></i><b>3.2</b> Limitations</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
-<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#qq-plots"><i class="fa fa-check"></i>QQ plots</a></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#analysis-with-green-turtles"><i class="fa fa-check"></i>Analysis with Green Turtles</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#foreshore-slope-1"><i class="fa fa-check"></i>Foreshore Slope</a></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#beach-slope-1"><i class="fa fa-check"></i>Beach Slope</a></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#beach-width-1"><i class="fa fa-check"></i>Beach Width</a></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#foredune-height-1"><i class="fa fa-check"></i>Foredune Height</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#code"><i class="fa fa-check"></i>Code</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -195,26 +206,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="methods" class="section level1" number="2">
 <h1><span class="header-section-number">Chapter 2</span> Methods</h1>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="methods.html#cb1-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">echo =</span> <span class="cn">FALSE</span>, <span class="at">warning =</span> <span class="cn">FALSE</span>, <span class="at">message =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb1-2"><a href="methods.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gsheet)</span></code></pre></div>
-<pre><code>## Warning: package &#39;gsheet&#39; was built under R version 4.1.1</code></pre>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="methods.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
-<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --</code></pre>
-<pre><code>## v ggplot2 3.3.5     v purrr   0.3.4
-## v tibble  3.1.2     v dplyr   1.0.7
-## v tidyr   1.1.3     v stringr 1.4.0
-## v readr   1.4.0     v forcats 0.5.1</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="methods.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggpubr)</span>
-<span id="cb7-2"><a href="methods.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(asbio)</span></code></pre></div>
-<pre><code>## Warning: package &#39;asbio&#39; was built under R version 4.1.2</code></pre>
-<pre><code>## Loading required package: tcltk</code></pre>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="methods.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
-<span id="cb10-2"><a href="methods.html#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">scipen =</span> <span class="dv">999</span>)</span>
-<span id="cb10-3"><a href="methods.html#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co">#call in data</span></span>
-<span id="cb10-4"><a href="methods.html#cb10-4" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(<span class="fu">gsheet2tbl</span>(<span class="st">&quot;https://docs.google.com/spreadsheets/d/1IRNiGVwJtBPyLTnl4HaVTo0rfIX90HlRSm7P0EH3_Zs/edit&quot;</span>))</span></code></pre></div>
 <div id="data" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> Data</h2>
 <p>The sea turtle nest site data came from Pensacola beach in the summer of 2021. The data was recorded by Madison Williams using GPS technology. Data collection was guided and advised by Dr. Philip Schmutz for use by the Earth and Environmental Science department at the University of West Florida.</p>
@@ -237,7 +228,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>100 meters west</li>
 <li>100 meters east</li>
 </ul>
-<p>Figure 1 provides and image of the observed locations.</p>
+<p>Figure 1 provides an image of the observed locations.</p>
 <center>
 <p><img src="measurement%20locations.png" /></p>
 <p>Figure 1. Observed locations.</p>
@@ -294,15 +285,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Confidence intervals are used to calculate a range of values that are likely to obtain the true mean with a high degree of probability.</p>
 <p><em>Formula</em></p>
 <p>The formula for a confidence interval for <span class="math inline">\(\mu\)</span> for dependent data is as follows:</p>
-<p><span class="math display">\[(\overline{d} - t_{\alpha/2}*\frac{s_{d}}{\sqrt{n}}, \overline{d} + t_{\alpha/2}*\frac{s_{d}}{\sqrt{n}})\]</span>
-- <span class="math inline">\(\overline{d}\)</span> is the mean of the differences
-- <span class="math inline">\(t_{\alpha/2}\)</span> is the critical value
-- 1 - <span class="math inline">\(\alpha\)</span>/2 is the cinfidence level
-- <span class="math inline">\(s_{d}\)</span> is the standard deviation of the differences
-- <span class="math inline">\(n\)</span> is the sample size (number of pairs)</p>
+<p><span class="math display">\[(\overline{d} - t_{\alpha/2}*\frac{s_{d}}{\sqrt{n}}, \overline{d} + t_{\alpha/2}*\frac{s_{d}}{\sqrt{n}})\]</span></p>
+<ul>
+<li><span class="math inline">\(\overline{d}\)</span> is the mean of the differences</li>
+<li><span class="math inline">\(t_{\alpha/2}\)</span> is the critical value</li>
+<li>1 - <span class="math inline">\(\alpha\)</span>/2 is the confidence level</li>
+<li><span class="math inline">\(s_{d}\)</span> is the standard deviation of the differences</li>
+<li><span class="math inline">\(n\)</span> is the sample size (number of pairs)</li>
+</ul>
 <p>The formula for a confidence interval for the median is as follows:</p>
 <p><span class="math display">\[(x_{j},x_{k})\]</span>
-where <span class="math inline">\(x_{j}\)</span> is the <em>jth</em> observation, and <span class="math inline">\(x_{k}\)</span> is the <em>kth</em> observation</p>
+<span class="math inline">\(x_{j}\)</span> and <span class="math inline">\(x_{k}\)</span> are location statistics where <span class="math inline">\(x_{j}\)</span> is the <em>jth</em> observation, and <span class="math inline">\(x_{k}\)</span> is the <em>kth</em> observation</p>
 <ul>
 <li><span class="math inline">\(j = n*q - z_{\alpha}\sqrt{n*q*(1-q)}\)</span></li>
 <li><span class="math inline">\(k = n*q + z_{\alpha}\sqrt{n*q*(1-q)}\)</span></li>
@@ -319,24 +312,27 @@ where <span class="math inline">\(x_{j}\)</span> is the <em>jth</em> observation
 </div>
 <div id="analysis-of-the-current-data" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> Analysis of the Current Data</h2>
-<p>With the given set of data, the paired t-tests were appropriate. The data was approximately normally distributed, and no extreme outliers existed. Below are some of the QQ plots used to assess normality. The rest of the QQ plots are included in the appendix. The Wilcoxon signed-rank test was also performed for comparison purposes. Foreshore slope, beach slope, beach width, and foredune height were all analyzed to find differences between locations. The nest lines were compared to every other location, 25W, 25E, 50W, 50E, 100W, 100E. Tests were also performed to compare each west variable with its respective east variable. Results for the paired t-test are shown as the mean with the corresponding confidence interval. Results for the Wilcoxon signed-rank test are shown as the median with the corresponding median confidence interval.</p>
+<p>With the given set of data, the paired t-tests were appropriate. The data was approximately normally distributed, and no extreme outliers existed. Below are some of the quantile-quantile (QQ) plots used to assess normality (Figure 2). The rest of the QQ plots are included in the appendix. The Wilcoxon signed-rank test was also performed for comparison purposes. Foreshore slope, beach slope, beach width, and foredune height were all analyzed to find differences between locations. The nest lines were compared to every other location, 25W, 25E, 50W, 50E, 100W, 100E. Tests were also performed to compare each west variable with its respective east variable. Results for the paired t-test are shown as the mean with the corresponding confidence interval. Results for the Wilcoxon signed-rank test are shown as the median with the corresponding median confidence interval.</p>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<center>
+<p>Figure 2. QQ plots used to assess normality for foreshore slope comparisons between nest line and other locations.</p>
+</center>
 
 </div>
 <div id="analysis-results" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Analysis Results</h2>
 <div id="foreshore-slope" class="section level3" number="2.4.1">
 <h3><span class="header-section-number">2.4.1</span> Foreshore Slope</h3>
-<p>Figure 2 shows boxplots of the foreshore slope, organized by location.</p>
+<p>Figure 3 shows boxplots of the foreshore slope, organized by location.</p>
 <center>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
-<p>Figure 2. Boxplots of foreshore slope.</p>
+<p>Figure 3. Boxplots of foreshore slope.</p>
 </center>
-<p>The test results for the paired t-test and the Wilcoxon signed-rank test for foreshore slope are shown below, as well as plots of the individual differences between the nest line and other locations (Figure 3). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as <span class="math inline">\(\alpha = 0.1\)</span></p>
+<p>The test results for the paired t-test and the Wilcoxon signed-rank test for foreshore slope are shown below (Table 1, Table 2), as well as plots of the individual differences between the nest line and other locations (Figure 4). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as <span class="math inline">\(\alpha = 0.1\)</span></p>
 <center>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
-<p>Figure 3. Dot plots of differences in foreshore slope between nest line and other locations.</p>
-<p>Table 1. Analysis results for foreshore slope with only loggerhead nests.</p>
+<p>Figure 4. Dot plots of differences in foreshore slope between nest line and other locations.</p>
+<p>Table 1. Analysis results for foreshore slope with loggerhead nests only.</p>
 </center>
 <table style="width:100%;">
 <colgroup>
@@ -401,7 +397,7 @@ where <span class="math inline">\(x_{j}\)</span> is the <em>jth</em> observation
 </tbody>
 </table>
 <center>
-<p>Table 2. Analysis for east vs. west comparisons with loggerhead nests only.</p>
+<p>Table 2. Foreshore slope analysis for east vs. west comparisons with loggerhead nests only.</p>
 </center>
 <table>
 <colgroup>
@@ -445,129 +441,19 @@ where <span class="math inline">\(x_{j}\)</span> is the <em>jth</em> observation
 </tbody>
 </table>
 <p>These tables show both the paired t-test results and the Wilcoxon signed-rank test results for the foreshore slope. Comparisons include only the loggerhead turtle nests. When comparing the nest line to outside locations, 25E, 50E, 100E, and 100W all have statistically different means. When comparing the measurements from each side together, there is a statistically significant difference between the means of 50W and 50E. All of the statistically significant variables were significant in both the paired t-test and the Wilcoxon signed-rank test.</p>
-<center>
-<p>Table 3. Analysis results for foreshore slope with loggerhead nests and green turtle nest.</p>
-</center>
-<table style="width:100%;">
-<colgroup>
-<col width="5%" />
-<col width="24%" />
-<col width="16%" />
-<col width="25%" />
-<col width="27%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>mean difference (90% CI)</th>
-<th>p-value paired t</th>
-<th>median difference (90% CI)</th>
-<th>p-value Wilcoxon signed rank</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>25W</td>
-<td>0.58 (-0.14, 1.29)</td>
-<td>0.176</td>
-<td>0.34 (-0.34, 1.79)</td>
-<td>0.211</td>
-</tr>
-<tr class="even">
-<td>25E</td>
-<td>0.75 (0.24, 1.26)</td>
-<td>0.021</td>
-<td>0.66 (0, 1.45)</td>
-<td>0.024</td>
-</tr>
-<tr class="odd">
-<td>50W</td>
-<td>-0.10 (-0.77, 0.58)</td>
-<td>0.806</td>
-<td>-0.01 (-0.98, 0.76)</td>
-<td>0.755</td>
-</tr>
-<tr class="even">
-<td>50E</td>
-<td>0.83 (-0.01, 1.68)</td>
-<td>0.105</td>
-<td>1.17 (-0.69, 2.71)</td>
-<td>0.106</td>
-</tr>
-<tr class="odd">
-<td>100W</td>
-<td>1.26 (0.46, 2.05)</td>
-<td>0.015</td>
-<td>0.82 (0.25, 2.93)</td>
-<td>0.025</td>
-</tr>
-<tr class="even">
-<td>100E</td>
-<td>1.07 (0.47, 1.68)</td>
-<td>0.007</td>
-<td>0.84 (-0.10, 2.17)</td>
-<td>0.016</td>
-</tr>
-</tbody>
-</table>
-<center>
-<p>Table 4. Analysis for east vs. west comparisons for foreshore slope with loggerhead nests and the green turtle nest.</p>
-</center>
-<table>
-<colgroup>
-<col width="12%" />
-<col width="22%" />
-<col width="15%" />
-<col width="23%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>East vs. West</th>
-<th>mean difference (90% CI)</th>
-<th>p-value paired t</th>
-<th>median difference (90% CI)</th>
-<th>p-value Wilcoxon signed rank</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>25m</td>
-<td>0.17 (-0.62, 0.96)</td>
-<td>0.709</td>
-<td>0.23 (-0.92, 1.07)</td>
-<td>0.798</td>
-</tr>
-<tr class="even">
-<td>50m</td>
-<td>-0.93 (-1.96, 0.10)</td>
-<td>0.134</td>
-<td>-0.29 (-3.42, 0.28)</td>
-<td>0.106</td>
-</tr>
-<tr class="odd">
-<td>100m</td>
-<td>0.18 (-0.59, 0.95)</td>
-<td>0.68</td>
-<td>0.45 (-0.68, 1.01)</td>
-<td>0.551</td>
-</tr>
-</tbody>
-</table>
-<p>These tables show both the paired t-test results and the Wilcoxon signed-rank test results for the foreshore slope. Comparisons include loggerhead nests and the green turtle nest. When comparing the nest line to outside locations, 25E, 100E, and 100W all have statistically different means. When comparing the measurements from each side together, there are no statistically significant comparisons. All of the statistically significant variables are significant in both the paired t-test and the Wilcoxon signed-rank test.</p>
 </div>
 <div id="beach-slope" class="section level3" number="2.4.2">
 <h3><span class="header-section-number">2.4.2</span> Beach Slope</h3>
-<p>Figure 4 shows boxplots of the beach slope, organized by location.</p>
+<p>Figure 5 shows boxplots of the beach slope, organized by location.</p>
 <center>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
-<p>Figure 4. Boxplots of beach slope</p>
+<p>Figure 5. Boxplots of beach slope</p>
 </center>
-<p>The test results for the paired t-test and the Wilcoxon signed-rank test for beach slope are shown below, as well as plots of the individual differences between the nest line and other locations (Figure 5). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as <span class="math inline">\(\alpha = 0.1\)</span></p>
+<p>The test results for the paired t-test and the Wilcoxon signed-rank test for beach slope are shown below (Table 3, Table 4), as well as plots of the individual differences between the nest line and other locations (Figure 6). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as <span class="math inline">\(\alpha = 0.1\)</span></p>
 <center>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
-<p>Figure 5. Dot plots of differences in beach slope between nest line and other locations.</p>
-<p>Table 5. Analysis results for beach slope with only loggerhead nests.</p>
+<p>Figure 6. Dot plots of differences in beach slope between nest line and other locations.</p>
+<p>Table 3. Analysis results for beach slope with loggerhead nests only.</p>
 </center>
 <table style="width:100%;">
 <colgroup>
@@ -632,7 +518,7 @@ where <span class="math inline">\(x_{j}\)</span> is the <em>jth</em> observation
 </tbody>
 </table>
 <center>
-<p>Table 6. Analysis for east vs. west comparisons with loggerhead nests only.</p>
+<p>Table 4. Beach slope analysis for east vs. west comparisons with loggerhead nests only.</p>
 </center>
 <table>
 <colgroup>
@@ -676,129 +562,19 @@ where <span class="math inline">\(x_{j}\)</span> is the <em>jth</em> observation
 </tbody>
 </table>
 <p>These tables show both the paired t-test results and the Wilcoxon signed-rank test results for the beach slope. Comparisons include loggerhead nests only. When comparing the nest line to outside locations, 25E, 25W, 50E, 50W, and 100E all have statistically different means. When comparing the measurements from each side together, 100W and 100E are statistically significant. The comparison between the nest line and 50W is significant in the paired t-test, but not in the Wilcoxon signed-rank test.</p>
-<center>
-<p>Table 7. Analysis results for beach slope with loggerhead nests and green turtle nest.</p>
-</center>
-<table style="width:100%;">
-<colgroup>
-<col width="5%" />
-<col width="24%" />
-<col width="16%" />
-<col width="25%" />
-<col width="27%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>mean difference (90% CI)</th>
-<th>p-value paired t</th>
-<th>median difference (90% CI)</th>
-<th>p-value Wilcoxon signed rank</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>25W</td>
-<td>0.36 (0.11, 0.61)</td>
-<td>0.023</td>
-<td>0.26 (-0.15, 0.64)</td>
-<td>0.044</td>
-</tr>
-<tr class="even">
-<td>25E</td>
-<td>0.25 (0.02, 0.48)</td>
-<td>0.081</td>
-<td>0.31 (-0.17, 0.37)</td>
-<td>0.057</td>
-</tr>
-<tr class="odd">
-<td>50W</td>
-<td>0.27 (0.05, 0.48)</td>
-<td>0.046</td>
-<td>0.34 (-0.08, 0.59)</td>
-<td>0.065</td>
-</tr>
-<tr class="even">
-<td>50E</td>
-<td>0.36 (0.09, 0.62)</td>
-<td>0.032</td>
-<td>0.26 (0.10, 0.62)</td>
-<td>0.033</td>
-</tr>
-<tr class="odd">
-<td>100W</td>
-<td>-0.07 (-0.34, 0.20)</td>
-<td>0.65</td>
-<td>-0.06 (-0.34, 0.14)</td>
-<td>0.514</td>
-</tr>
-<tr class="even">
-<td>100E</td>
-<td>0.24 (-0.16, 0.63)</td>
-<td>0.308</td>
-<td>0.16 (0.03, 0.81)</td>
-<td>0.065</td>
-</tr>
-</tbody>
-</table>
-<center>
-<p>Table 8. Analysis for east vs. west comparisons for beach slope with loggerhead nests and the green turtle nest.</p>
-</center>
-<table>
-<colgroup>
-<col width="12%" />
-<col width="22%" />
-<col width="15%" />
-<col width="23%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>East vs. West</th>
-<th>mean difference (90% CI)</th>
-<th>p-value paired t</th>
-<th>median difference (90% CI)</th>
-<th>p-value Wilcoxon signed rank</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>25m</td>
-<td>-0.11 (-0.44, 0.22)</td>
-<td>0.562</td>
-<td>0.14 (-0.22, 0.46)</td>
-<td>0.293</td>
-</tr>
-<tr class="even">
-<td>50m</td>
-<td>-0.09 (-0.32, 0.14)</td>
-<td>0.517</td>
-<td>-0.18 (-0.32, 0.19)</td>
-<td>0.443</td>
-</tr>
-<tr class="odd">
-<td>100m</td>
-<td>-0.31 (-0.66, 0.05)</td>
-<td>0.150</td>
-<td>-0.38 (-0.55, 0.01)</td>
-<td>0.148</td>
-</tr>
-</tbody>
-</table>
-<p>These tables show both the paired t-test results and the Wilcoxon signed-rank test results for the beach slope. Comparisons include loggerhead nests and the green turtle nest. When comparing the nest line to outside locations, 25E, 25W, 50E, 50W, and 100E all have statistically different means. When comparing the measurements from each side together, there are no statistically significant comparisons. The comparison between the nest line and 100W is not significant in the paired t-test, but it was in the Wilcoxon signed-rank test.</p>
 </div>
 <div id="beach-width" class="section level3" number="2.4.3">
 <h3><span class="header-section-number">2.4.3</span> Beach Width</h3>
-<p>Figure 6 shows boxplots of the beach width, organized by location.</p>
+<p>Figure 7 shows boxplots of the beach width, organized by location.</p>
 <center>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
-<p>Figure 6. Boxplots of beach width.</p>
+<p>Figure 7. Boxplots of beach width.</p>
 </center>
-<p>The test results for the paired t-test and the Wilcoxon signed-rank test for beach width are shown below, as well as plots of the individual differences between the nest line and other locations (Figure 7). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as <span class="math inline">\(\alpha = 0.1\)</span></p>
+<p>The test results for the paired t-test and the Wilcoxon signed-rank test for beach width are shown below (Table 5, Table 6), as well as plots of the individual differences between the nest line and other locations (Figure 8). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as <span class="math inline">\(\alpha = 0.1\)</span></p>
 <center>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
-<p>Figure 7. Dot plots of differences in beach width between nest line and other locations.</p>
-Table 9. Analysis results for beach width with only loggerhead nests.
+<p>Figure 8. Dot plots of differences in beach width between nest line and other locations.</p>
+Table 5. Analysis results for beach width with loggerhead nests only.
 </center>
 <table style="width:100%;">
 <colgroup>
@@ -863,7 +639,7 @@ Table 9. Analysis results for beach width with only loggerhead nests.
 </tbody>
 </table>
 <center>
-<p>Table 10. Analysis for east vs. west comparisons with loggerhead nests only.</p>
+<p>Table 6. Beach width analysis for east vs. west comparisons with loggerhead nests only.</p>
 </center>
 <table>
 <colgroup>
@@ -907,129 +683,19 @@ Table 9. Analysis results for beach width with only loggerhead nests.
 </tbody>
 </table>
 <p>These tables show both the paired t-test results and the Wilcoxon signed-rank test results for the beach width. Comparisons include loggerhead nests only. When comparing the nest line to outside locations, 25E and 25W both have statistically different means. When comparing the measurements from each side together, there are no statistically significant comparisons. The comparison between the nest line and 25W is not significant in the paired t-test, but it is in the Wilcoxon signed-rank test. The comparison between the nest line and 25E is significant in the paired t-test, but not in the Wilcoxon signed-rank test.</p>
-<center>
-<p>Table 11. Analysis results for beach width with loggerhead nests and green turtle nest.</p>
-</center>
-<table style="width:100%;">
-<colgroup>
-<col width="5%" />
-<col width="24%" />
-<col width="16%" />
-<col width="25%" />
-<col width="27%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>mean difference (90% CI)</th>
-<th>p-value paired t</th>
-<th>median difference (90% CI)</th>
-<th>p-value Wilcoxon signed rank</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>25W</td>
-<td>0.68 (-0.98, 2.33)</td>
-<td>0.482</td>
-<td>1.53 (-0.71, 2.46)</td>
-<td>0.244</td>
-</tr>
-<tr class="even">
-<td>25E</td>
-<td>1.72 (0.10, 3.33)</td>
-<td>0.082</td>
-<td>1.36 (-1.61, 5.52)</td>
-<td>0.164</td>
-</tr>
-<tr class="odd">
-<td>50W</td>
-<td>-0.07 (-1.76, 1.61)</td>
-<td>0.94</td>
-<td>1.62 (-4.47, 2.89)</td>
-<td>0.977</td>
-</tr>
-<tr class="even">
-<td>50E</td>
-<td>0.79 (-1.03, 2.62)</td>
-<td>0.457</td>
-<td>0.53 (-3.40, 4.41)</td>
-<td>0.551</td>
-</tr>
-<tr class="odd">
-<td>100W</td>
-<td>0.07 (-2.44, 2.57)</td>
-<td>0.964</td>
-<td>1.22 (-4.57, 4.98)</td>
-<td>0.842</td>
-</tr>
-<tr class="even">
-<td>100E</td>
-<td>-0.75 (-3.71, 2.20)</td>
-<td>0.661</td>
-<td>-1.85 (-6.08, 3.94)</td>
-<td>0.670</td>
-</tr>
-</tbody>
-</table>
-<center>
-<p>Table 12. Analysis for east vs. west comparisons for beach width with loggerhead nests and the green turtle nest.</p>
-</center>
-<table>
-<colgroup>
-<col width="12%" />
-<col width="22%" />
-<col width="15%" />
-<col width="23%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>East vs. West</th>
-<th>mean difference (90% CI)</th>
-<th>p-value paired t</th>
-<th>median difference (90% CI)</th>
-<th>p-value Wilcoxon signed rank</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>25m</td>
-<td>1.04 (-1.38, 3.46)</td>
-<td>0.462</td>
-<td>-1.03 (-5.95, 3.75)</td>
-<td>0.410</td>
-</tr>
-<tr class="even">
-<td>50m</td>
-<td>-0.87 (-3.42, 1.69)</td>
-<td>0.560</td>
-<td>0.07 (-5.00, 3.16)</td>
-<td>0.755</td>
-</tr>
-<tr class="odd">
-<td>100m</td>
-<td>0.82 (-2.80, 4.44)</td>
-<td>0.696</td>
-<td>2.49 (-6.40, 6.85)</td>
-<td>0.670</td>
-</tr>
-</tbody>
-</table>
-<p>These tables show both the paired t-test results and the Wilcoxon signed-rank test results for the beach width. Comparisons include loggerhead nests and the green turtle nest. When comparing the nest line to outside locations 25E has a statistically different mean. When comparing the measurements from each side together, there are no statistically significant comparisons. The comparison between the nest line and 25E is significant in the paired t-test, but not in the Wilcoxon signed-rank test.</p>
 </div>
 <div id="foredune-height" class="section level3" number="2.4.4">
 <h3><span class="header-section-number">2.4.4</span> Foredune Height</h3>
-<p>Figure 8 shows boxplots of the foredune height, organized by location.</p>
+<p>Figure 9 shows boxplots of the foredune height, organized by location.</p>
 <center>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
-<p>Figure 8. Boxplots of foredune height</p>
+<p>Figure 9. Boxplots of foredune height</p>
 </center>
-<p>The test results for the paired t-test and the Wilcoxon signed-rank test for foredune height are shown below, as well as plots of the individual differences between the nest line and other locations (Figure 9). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as <span class="math inline">\(\alpha = 0.1\)</span></p>
+<p>The test results for the paired t-test and the Wilcoxon signed-rank test for foredune height are shown below (Table 7, Table 8), as well as plots of the individual differences between the nest line and other locations (Figure 10). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as <span class="math inline">\(\alpha = 0.1\)</span></p>
 <center>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
-<p>Figure 9. Dot plots of differences in foredune height between nest line and other locations.</p>
-<p>Table 13. Analysis results for foreshore slope with only loggerhead nests.</p>
+<p>Figure 10. Dot plots of differences in foredune height between nest line and other locations.</p>
+<p>Table 7. Analysis results for foreshore slope with only loggerhead nests.</p>
 </center>
 <table style="width:100%;">
 <colgroup>
@@ -1094,7 +760,7 @@ Table 9. Analysis results for beach width with only loggerhead nests.
 </tbody>
 </table>
 <center>
-<p>Table 14. Analysis for east vs. west comparisons with loggerhead nests only.</p>
+<p>Table 8. Analysis for east vs. west comparisons with loggerhead nests only.</p>
 </center>
 <table>
 <colgroup>
@@ -1138,116 +804,6 @@ Table 9. Analysis results for beach width with only loggerhead nests.
 </tbody>
 </table>
 <p>These tables show both the paired t-test results and the Wilcoxon signed-rank test results for foredune height. Comparisons include loggerhead nests only. When comparing the nest line to outside locations there are no statistical differences for any variables. When comparing the measurements from each side together, there are no statistically significant comparisons.</p>
-<center>
-<p>Table 15. Analysis results for foredune height with loggerhead nests and green turtle nest.</p>
-</center>
-<table style="width:100%;">
-<colgroup>
-<col width="5%" />
-<col width="24%" />
-<col width="16%" />
-<col width="25%" />
-<col width="27%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>mean difference (90% CI)</th>
-<th>p-value paired t</th>
-<th>median difference (90% CI)</th>
-<th>p-value Wilcoxon signed rank</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>25W</td>
-<td>&gt;0.01 (-0.14, 0.13)</td>
-<td>0.922</td>
-<td>-0.10 (-0.12, 0.20)</td>
-<td>0.842</td>
-</tr>
-<tr class="even">
-<td>25E</td>
-<td>0.04 (-0.07, 0.15)</td>
-<td>0.567</td>
-<td>0.07 (-0.21, 0.25)</td>
-<td>0.590</td>
-</tr>
-<tr class="odd">
-<td>50W</td>
-<td>0.03 (-0.07, 0.13)</td>
-<td>0.608</td>
-<td>0.08 (-0.06, 0.20)</td>
-<td>0.268</td>
-</tr>
-<tr class="even">
-<td>50E</td>
-<td>0.06 (-0.13, 0.25)</td>
-<td>0.604</td>
-<td>-0.15 (-0.24, 0.39)</td>
-<td>0.887</td>
-</tr>
-<tr class="odd">
-<td>100W</td>
-<td>-0.03 (-0.18, 0.12)</td>
-<td>0.737</td>
-<td>0.01 (-0.30, 0.24)</td>
-<td>0.755</td>
-</tr>
-<tr class="even">
-<td>100E</td>
-<td>0.02 (-0.16, 0.20)</td>
-<td>0.849</td>
-<td>-0.05 (-0.24, 0.36)</td>
-<td>0.977</td>
-</tr>
-</tbody>
-</table>
-<center>
-<p>Table 16. Analysis for east vs. west comparisons for foreshore slope with loggerhead nests and the green turtle nest.</p>
-</center>
-<table>
-<colgroup>
-<col width="12%" />
-<col width="22%" />
-<col width="15%" />
-<col width="23%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>East vs. West</th>
-<th>mean difference (90% CI)</th>
-<th>p-value paired t</th>
-<th>median difference (90% CI)</th>
-<th>p-value Wilcoxon signed rank</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>25m</td>
-<td>0.04 (-0.13, 0.22)</td>
-<td>0.663</td>
-<td>&lt;0.01 (-0.34, 0.09)</td>
-<td>0.629</td>
-</tr>
-<tr class="even">
-<td>50m</td>
-<td>-0.03 (-0.25, 0.20)</td>
-<td>0.835</td>
-<td>0.15 (-0.36, 0.34)</td>
-<td>1.000</td>
-</tr>
-<tr class="odd">
-<td>100m</td>
-<td>-0.05 (-0.32, 0.22)</td>
-<td>0.753</td>
-<td>-0.01 (-0.54, 0.45)</td>
-<td>0.842</td>
-</tr>
-</tbody>
-</table>
-<p>These tables show both the paired t-test results and the Wilcoxon signed-rank test results for foredune height. Comparisons include loggerhead nests and the green turtle nest. When comparing the nest line to outside locations there are no statistical differences for any variables. When comparing the measurements from each side together, there are no statistically significant comparisons.</p>
 
 </div>
 </div>

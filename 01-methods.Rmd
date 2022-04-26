@@ -1,6 +1,6 @@
 # Methods
 
-```{r}
+```{r echo = FALSE, warning = FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(gsheet)
 library(tidyverse)
@@ -12,11 +12,11 @@ options(scipen = 999)
 data <- as_tibble(gsheet2tbl("https://docs.google.com/spreadsheets/d/1IRNiGVwJtBPyLTnl4HaVTo0rfIX90HlRSm7P0EH3_Zs/edit"))
 ```
 
-```{r}
+```{r echo = FALSE, warning = FALSE, message=FALSE}
 data$location <- factor(data$location, c("100W", "50W", "25W", "Nestline", "25E", "50E", "100E"))
 ```
 
-```{r}
+```{r echo = FALSE, warning = FALSE, message=FALSE}
 bp1 <- ggplot(data=data, aes(y= foreshore_slope, x=location, fill=location)) +
           geom_boxplot() +
           theme_minimal() +
@@ -46,7 +46,7 @@ bp4 <- ggplot(data=data, aes(y= foredune_height, x=location, fill=location)) +
           ggtitle("Foredune Height")
 ```
 
-```{r}
+```{r echo = FALSE, warning = FALSE, message=FALSE}
 data_nestline <- data %>% filter(location == "Nestline")
 data_25w <- data %>% filter(location == "25W")
 data_25e <- data %>% filter(location == "25E")
@@ -56,7 +56,7 @@ data_100w <- data %>% filter(location == "100W")
 data_100e <- data %>% filter(location == "100E")
 ```
 
-```{r}
+```{r echo = FALSE, warning = FALSE, message=FALSE}
 data_nestline$fsn25w <- data_nestline$foreshore_slope - data_25w$foreshore_slope
 data_nestline$fsn25e <- data_nestline$foreshore_slope - data_25e$foreshore_slope
 data_nestline$fsn50w <- data_nestline$foreshore_slope - data_50w$foreshore_slope
@@ -86,7 +86,7 @@ data_nestline$fhn100w <- data_nestline$foredune_height - data_100w$foredune_heig
 data_nestline$fhn100e <- data_nestline$foredune_height - data_100e$foredune_height
 ```
 
-```{r}
+```{r echo = FALSE, warning = FALSE}
 data_nestline$fs25we <- data_25e$foreshore_slope - data_25w$foreshore_slope
 data_nestline$fs50we <- data_50e$foreshore_slope - data_50w$foreshore_slope
 data_nestline$fs100we <- data_100e$foreshore_slope - data_100w$foreshore_slope
@@ -104,7 +104,7 @@ data_nestline$fh50we <- data_50e$foredune_height - data_50w$foredune_height
 data_nestline$fh100we <- data_100e$foredune_height - data_100w$foredune_height
 ```
 
-```{r}
+```{r echo = FALSE, warning = FALSE}
 #foreshore slope
 gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) +
   geom_point(size = 2) +
@@ -162,7 +162,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
 ```
   
   
-```{r}
+```{r echo = FALSE, warning = FALSE}
 #beach slope
   gbsn25w <- data_nestline %>% ggplot(aes(x = nest, y = bsn25w, color = Species)) +
   geom_point(size = 2) +
@@ -220,7 +220,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
 ```
   
   
-```{r}
+```{r echo = FALSE, warning = FALSE}
 #beach width
   gbwn25w <- data_nestline %>% ggplot(aes(x = nest, y = bwn25w, color = Species)) +
   geom_point(size = 2) +
@@ -277,7 +277,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   theme_minimal()
 ```
   
-```{r}
+```{r echo = FALSE, warning = FALSE}
 #foredune height
   gfhn25w <- data_nestline %>% ggplot(aes(x = nest, y = fhn25w, color = Species)) +
   geom_point(size = 2) +
@@ -334,7 +334,7 @@ gfsn25w <- data_nestline %>% ggplot(aes(x = nest, y = fsn25w, color = Species)) 
   theme_minimal()
 ```
 
-```{r}
+```{r echo = FALSE, warning = FALSE}
 gfs25we <- data_nestline %>% ggplot(aes(x = nest, y = fs25we, color = Species)) +
   geom_point(size = 2) +
   scale_color_manual(values = c("Loggerhead" = "#004C97", "Green" = "#40A829")) +
@@ -444,7 +444,7 @@ gfs25we <- data_nestline %>% ggplot(aes(x = nest, y = fs25we, color = Species)) 
   theme_minimal()
 ```
 
-```{r}
+```{r echo = FALSE, warning = FALSE}
 mgfsn <- ggarrange(gfsn25w, gfsn25e, gfsn50w, gfsn50e, gfsn100w, gfsn100e, ncol = 2,nrow = 3)
 
 mgbsn <- ggarrange(gbsn25w, gbsn25e, gbsn50w, gbsn50e, gbsn100w, gbsn100e, ncol = 2,nrow = 3)
@@ -458,7 +458,7 @@ mgwe1 <- ggarrange(gfs25we, gbs25we, gfs50we, gbs50we, gfs100we, gbs100we, ncol 
 mgwe2 <- ggarrange(gbw25we, gfh25we, gbw50we, gfh50we, gbw100we, gfh100we, ncol = 2, nrow = 3)
 ```
 
-```{r}
+```{r echo = FALSE, warning = FALSE}
 qqfsn25w <- ggplot(data_nestline, aes(sample = fsn25w)) +
   stat_qq(size=3) +
   stat_qq_line() +
@@ -677,7 +677,7 @@ qqfhn100e <- ggplot(data_nestline, aes(sample = fhn100e)) +
 ```
 
 
-```{r}
+```{r echo = FALSE, warning = FALSE}
 qqfs25we <- ggplot(data_nestline, aes(sample = fs25we)) +
   stat_qq(size=3) +
   stat_qq_line() +
@@ -688,7 +688,7 @@ qqfs25we <- ggplot(data_nestline, aes(sample = fs25we)) +
   theme(text = element_text(size=8))
 ```
 
-```{r}
+```{r echo = FALSE, warning = FALSE}
 qqfs50we <- ggplot(data_nestline, aes(sample = fs50we)) +
   stat_qq(size=3) +
   stat_qq_line() +
@@ -789,7 +789,7 @@ qqfh100we <- ggplot(data_nestline, aes(sample = fh100we)) +
   theme(text = element_text(size=8))
 ```
 
-```{r}
+```{r echo = FALSE, warning = FALSE}
 mfsn <- ggarrange(qqfsn25w, qqfsn25e, qqfsn50w, qqfsn50e, qqfsn100w, qqfsn100e, ncol = 3,nrow = 2)
 
 mbsn <- ggarrange(qqbsn25w, qqbsn25e, qqbsn50w, qqbsn50e, qqbsn100w, qqbsn100e, ncol = 3,nrow = 2)
@@ -814,6 +814,7 @@ The following variables were measured:
 -	Beach width: Distance between the potential vegetation line and the mean high water line
 -	Foredune height: Highest elevation point between the landward dune boundary and the potential line of vegetation
 
+
 The variables were measured at the following locations:
 
 -	Nest line
@@ -824,7 +825,7 @@ The variables were measured at the following locations:
 -	100 meters west
 -	100 meters east
 
-Figure 1 provides and image of the observed locations.
+Figure 1 provides an image of the observed locations. 
 
 <center>
 
@@ -898,16 +899,17 @@ Confidence intervals are used to calculate a range of values that are likely to 
 The formula for a confidence interval for $\mu$ for dependent data is as follows:
 
 \[(\overline{d} - t_{\alpha/2}*\frac{s_{d}}{\sqrt{n}}, \overline{d} + t_{\alpha/2}*\frac{s_{d}}{\sqrt{n}})\]
+
 -	$\overline{d}$ is the mean of the differences
 -	$t_{\alpha/2}$ is the critical value
-   - 1 - $\alpha$/2 is the cinfidence level
+   - 1 - $\alpha$/2 is the confidence level
 -	$s_{d}$ is the standard deviation of the differences
 -	$n$ is the sample size (number of pairs)
 
 The formula for a confidence interval for the median is as follows:
 
 \[(x_{j},x_{k})\]
-where $x_{j}$ is the *jth* observation, and $x_{k}$ is the *kth* observation
+$x_{j}$ and $x_{k}$ are location statistics where $x_{j}$ is the *jth* observation, and $x_{k}$ is the *kth* observation
 
 -	$j = n*q - z_{\alpha}\sqrt{n*q*(1-q)}$
 -	$k = n*q + z_{\alpha}\sqrt{n*q*(1-q)}$
@@ -924,9 +926,14 @@ The confidence interval is interpreted based on the significance level used. We 
 
 ## Analysis of the Current Data
 
-With the given set of data, the paired t-tests were appropriate. The data was approximately normally distributed, and no extreme outliers existed. Below are some of the QQ plots used to assess normality. The rest of the QQ plots are included in the appendix. The Wilcoxon signed-rank test was also performed for comparison purposes. Foreshore slope, beach slope, beach width, and foredune height were all analyzed to find differences between locations. The nest lines were compared to every other location, 25W, 25E, 50W, 50E, 100W, 100E. Tests were also performed to compare each west variable with its respective east variable. Results for the paired t-test are shown as the mean with the corresponding confidence interval. Results for the Wilcoxon signed-rank test are shown as the median with the corresponding median confidence interval. 
+With the given set of data, the paired t-tests were appropriate. The data was approximately normally distributed, and no extreme outliers existed. Below are some of the quantile-quantile (QQ) plots used to assess normality (Figure 2). The rest of the QQ plots are included in the appendix. The Wilcoxon signed-rank test was also performed for comparison purposes. Foreshore slope, beach slope, beach width, and foredune height were all analyzed to find differences between locations. The nest lines were compared to every other location, 25W, 25E, 50W, 50E, 100W, 100E. Tests were also performed to compare each west variable with its respective east variable. Results for the paired t-test are shown as the mean with the corresponding confidence interval. Results for the Wilcoxon signed-rank test are shown as the median with the corresponding median confidence interval. 
 
 ```{r}
 annotate_figure(mfsn, top = text_grob("Foreshore Slope Difference with Nestline", color = "black", face = "bold", size = 20))
 ```
 
+<center>
+
+Figure 2. QQ plots used to assess normality for foreshore slope comparisons between nest line and other locations.
+
+</center>
