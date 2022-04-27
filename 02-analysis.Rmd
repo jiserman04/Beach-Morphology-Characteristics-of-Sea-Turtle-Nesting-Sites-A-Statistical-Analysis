@@ -4,7 +4,7 @@
 
 ### Foreshore Slope
 
-Figure 3 shows boxplots of the foreshore slope, organized by location.
+Figure 4 shows boxplots of the foreshore slope, organized by location.
 
 <center>
 
@@ -12,12 +12,12 @@ Figure 3 shows boxplots of the foreshore slope, organized by location.
 bp1
 ```
 
-Figure 3. Boxplots of foreshore slope.
+Figure 4. Boxplots of foreshore slope.
 
 </center>
 
 
-The test results for the paired t-test and the Wilcoxon signed-rank test for foreshore slope are shown below (Table 1, Table 2), as well as plots of the individual differences between the nest line and other locations (Figure 4). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as $\alpha = 0.1$
+The test results for the paired t-test and the Wilcoxon signed-rank test for foreshore slope are shown below (Table 1, Table 2), as well as plots of the individual differences between the nest line and other locations (Figure 5). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as $\alpha = 0.1$
 
 <center>
 
@@ -25,7 +25,7 @@ The test results for the paired t-test and the Wilcoxon signed-rank test for for
 annotate_figure(mgfsn, top = text_grob("Foreshore Slope Difference with Nestline", color = "black", face = "bold", size = 20))
 ```
 
-Figure 4. Dot plots of differences in foreshore slope between nest line and other locations.
+Figure 5. Dot plots of differences in foreshore slope between nest line and other locations.
 
 
 Table 1. Analysis results for foreshore slope with loggerhead nests only.
@@ -58,7 +58,7 @@ These tables show both the paired t-test results and the Wilcoxon signed-rank te
 
 ### Beach Slope
 
-Figure 5 shows boxplots of the beach slope, organized by location.
+Figure 6 shows boxplots of the beach slope, organized by location.
 
 <center>
 
@@ -66,11 +66,11 @@ Figure 5 shows boxplots of the beach slope, organized by location.
 bp2
 ```
 
-Figure 5. Boxplots of beach slope
+Figure 6. Boxplots of beach slope
 
 </center>
 
-The test results for the paired t-test and the Wilcoxon signed-rank test for beach slope are shown below (Table 3, Table 4), as well as plots of the individual differences between the nest line and other locations (Figure 6). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as $\alpha = 0.1$
+The test results for the paired t-test and the Wilcoxon signed-rank test for beach slope are shown below (Table 3, Table 4), as well as plots of the individual differences between the nest line and other locations (Figure 7). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as $\alpha = 0.1$
 
 <center>
 
@@ -78,7 +78,7 @@ The test results for the paired t-test and the Wilcoxon signed-rank test for bea
 annotate_figure(mgbsn, top = text_grob("Beach Slope Difference with Nestline", color = "black", face = "bold", size = 20))
 ```
 
-Figure 6. Dot plots of differences in beach slope between nest line and other locations.
+Figure 7. Dot plots of differences in beach slope between nest line and other locations.
 
 Table 3. Analysis results for beach slope with loggerhead nests only.
 
@@ -110,7 +110,7 @@ These tables show both the paired t-test results and the Wilcoxon signed-rank te
 
 ### Beach Width
 
-Figure 7 shows boxplots of the beach width, organized by location.
+Figure 8 shows boxplots of the beach width, organized by location.
 
 <center>
 
@@ -118,11 +118,11 @@ Figure 7 shows boxplots of the beach width, organized by location.
 bp3
 ```
 
-Figure 7. Boxplots of beach width.
+Figure 8. Boxplots of beach width.
 
 </center>
 
-The test results for the paired t-test and the Wilcoxon signed-rank test for beach width are shown below (Table 5, Table 6), as well as plots of the individual differences between the nest line and other locations (Figure 8). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as $\alpha = 0.1$
+The test results for the paired t-test and the Wilcoxon signed-rank test for beach width are shown below (Table 5, Table 6), as well as plots of the individual differences between the nest line and other locations (Figure 9). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as $\alpha = 0.1$
 
 <center>
 
@@ -130,7 +130,7 @@ The test results for the paired t-test and the Wilcoxon signed-rank test for bea
 annotate_figure(mgbwn, top = text_grob("Beach Width Difference with Nestline", color = "black", face = "bold", size = 20))
 ```
 
-Figure 8. Dot plots of differences in beach width between nest line and other locations.
+Figure 9. Dot plots of differences in beach width between nest line and other locations.
 
 
 Table 5. Analysis results for beach width with loggerhead nests only.
@@ -162,7 +162,7 @@ These tables show both the paired t-test results and the Wilcoxon signed-rank te
 
 ### Foredune Height
 
-Figure 9 shows boxplots of the foredune height, organized by location.
+Figure 10 shows boxplots of the foredune height, organized by location.
 
 <center>
 
@@ -170,11 +170,11 @@ Figure 9 shows boxplots of the foredune height, organized by location.
 bp4
 ```
 
-Figure 9. Boxplots of foredune height
+Figure 10. Boxplots of foredune height
 
 </center>
 
-The test results for the paired t-test and the Wilcoxon signed-rank test for foredune height are shown below (Table 7, Table 8), as well as plots of the individual differences between the nest line and other locations (Figure 10). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as $\alpha = 0.1$
+The test results for the paired t-test and the Wilcoxon signed-rank test for foredune height are shown below (Table 7, Table 8), as well as plots of the individual differences between the nest line and other locations (Figure 11). Differences were computed by subtracting the listed location from the nest line. East and West differences were computed by subtracting the West measurement from the East measurement. Statistical significance was defined as $\alpha = 0.1$
 
 <center>
 
@@ -182,7 +182,7 @@ The test results for the paired t-test and the Wilcoxon signed-rank test for for
 annotate_figure(mgfhn, top = text_grob("Foreshore Slope Difference with Nestline", color = "black", face = "bold", size = 20))
 ```
 
-Figure 10. Dot plots of differences in foredune height between nest line and other locations.
+Figure 11. Dot plots of differences in foredune height between nest line and other locations.
 
 Table 7. Analysis results for foreshore slope with only loggerhead nests.
 

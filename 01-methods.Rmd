@@ -814,6 +814,15 @@ The following variables were measured:
 -	Beach width: Distance between the potential vegetation line and the mean high water line
 -	Foredune height: Highest elevation point between the landward dune boundary and the potential line of vegetation
 
+Figure 1 shows the a graphic to help visualize the variables
+
+<center>
+
+![](image1.png)
+
+Figure 1. Graphic of beach morphological characteristics.
+
+</center>
 
 The variables were measured at the following locations:
 
@@ -825,13 +834,13 @@ The variables were measured at the following locations:
 -	100 meters west
 -	100 meters east
 
-Figure 1 provides an image of the observed locations. 
+Figure 2 provides an image of the observed locations. 
 
 <center>
 
 ![](measurement locations.png)
 
-Figure 1. Observed locations.
+Figure 2. Observed locations.
 
 </center>
 
@@ -926,7 +935,7 @@ The confidence interval is interpreted based on the significance level used. We 
 
 ## Analysis of the Current Data
 
-With the given set of data, the paired t-tests were appropriate. The data was approximately normally distributed, and no extreme outliers existed. Below are some of the quantile-quantile (QQ) plots used to assess normality (Figure 2). The rest of the QQ plots are included in the appendix. The Wilcoxon signed-rank test was also performed for comparison purposes. Foreshore slope, beach slope, beach width, and foredune height were all analyzed to find differences between locations. The nest lines were compared to every other location, 25W, 25E, 50W, 50E, 100W, 100E. Tests were also performed to compare each west variable with its respective east variable. Results for the paired t-test are shown as the mean with the corresponding confidence interval. Results for the Wilcoxon signed-rank test are shown as the median with the corresponding median confidence interval. 
+With the given set of data, the paired t-tests were appropriate. The data was approximately normally distributed, and no extreme outliers existed. Below are some of the quantile-quantile (QQ) plots used to assess normality (Figure 3). The rest of the QQ plots are included in the appendix. The Wilcoxon signed-rank test was also performed for comparison purposes. Foreshore slope, beach slope, beach width, and foredune height were all analyzed to find differences between locations. The nest lines were compared to every other location, 25W, 25E, 50W, 50E, 100W, 100E. Tests were also performed to compare each west variable with its respective east variable. Results for the paired t-test are shown as the mean with the corresponding confidence interval. Results for the Wilcoxon signed-rank test are shown as the median with the corresponding median confidence interval. 
 
 ```{r}
 annotate_figure(mfsn, top = text_grob("Foreshore Slope Difference with Nestline", color = "black", face = "bold", size = 20))
@@ -934,6 +943,6 @@ annotate_figure(mfsn, top = text_grob("Foreshore Slope Difference with Nestline"
 
 <center>
 
-Figure 2. QQ plots used to assess normality for foreshore slope comparisons between nest line and other locations.
+Figure 3. QQ plots used to assess normality for foreshore slope comparisons between nest line and other locations.
 
 </center>
